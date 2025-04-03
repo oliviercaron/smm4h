@@ -1,0 +1,11 @@
+/task6/models
+/task1/results_xlmr
+/task1/results_xlm_roberta_base_256_tuned
+/task1/results_xlmr_longer_train
+/task1/results_xlmr_focal_thresh_tuning_opt
+/task6-refactor/results/fold_1
+/task6-refactor/results
+/task6-refactor/models
+/task1/results_mdeberta_256_tuned
+/task1/results_mdeberta_focal_thresh_tuning_opt
+/task6/final_model_training_output

@@ -1,0 +1,258 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+## Quarto
+
+```{r}
+# ---------------------------------------------------------
+# Load required packages
+# ---------------------------------------------------------
+library(readr)       # For reading CSV
+library(dplyr)       # For data manipulation
+library(text2vec)    # For text processing (tokenization, tf-idf, etc.)
+library(glmnet)      # For regularized logistic regression
+library(yardstick)   # For F1 metric calculation
+library(stringr)
+library(tibble)      # For tibble data structures
+library(ggthemr)
+library(mall)
+library(textclean)
+library(caret)
+
+ggthemr("fresh")
+
+theme_custom <- theme(
+text = element_text(size = 12),
+panel.grid = element_blank(),
+panel.grid.major.y = element_line(colour = "#e3e1e1",
+linetype = 2),
+plot.title.position = 'plot',
+legend.position = 'top',
+legend.title = element_blank()
+)
+```
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+# Charger les données
+train_data <- read_csv("data/train_data_SMM4H_2025_Task_1.csv")
+dev_data <- read_csv("data/dev_data_SMM4H_2025_Task_1.csv")
+```
+## Clean text
+
+```{r}
+
+clean_text <- function(text) {
+  # Return empty string if not a character string
+  if (!is.character(text)) return("")
+
+  # 1. Remove URLs
+  text <- str_remove_all(text, "http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+")
+
+  # 2. Remove @mentions including "@ all"
+  text <- str_replace_all(text, "@ all", "") # Specific case
+  text <- str_remove_all(text, "@[\\w_]+")
+
+  # 3. Remove known placeholders
+  placeholders <- c("<user>", "<tuser>", "<url>", "<email>", "<date>", "HTTPURL________________")
+  for (ph in placeholders) {
+    text <- str_replace_all(text, fixed(ph), "")
+  }
+
+  # 4. Remove hashtags (both # and the word)
+  #text <- str_remove_all(text, "#\\w+")
+
+  # 5. Remove emoji descriptions like :grinning_face:
+  text <- str_remove_all(text, ":[a-zA-Z_]+:(\\s|$)")
+  text <- str_remove_all(text, ":[a-zA-Z_]+:")
+
+  # 6. Remove basic emoticons
+  emoticons <- c(":-)", ":)", ":(", ":-(", ":-/", ":-\\\\", ":D", ":-D", ";-)", ";\\)")
+  for (emo in emoticons) {
+    text <- str_replace_all(text, fixed(emo), "")
+  }
+
+  # Handle specific patterns if needed
+  text <- str_replace_all(text, fixed("*heul**"), "")
+  
+  # 8. Remove leading punctuation at the beginning of the string
+  text <- str_replace(text, "^[\\.,!?;:\\-–«»\"'\\(\\)\\[\\]\\{\\}]+", "")
+  text <- str_trim(text)
+
+  # 7. Remove multiple spaces and trim
+  text <- str_squish(text)
+
+  # Optional: convert to lowercase (uncomment if needed)
+  # text <- tolower(text)
+
+  return(text)
+}
+
+# Apply the cleaning function to the dataset
+train_data <- train_data %>%
+  mutate(text_clean = sapply(text, clean_text)) %>%
+  relocate(text_clean, .after = text)
+```
+
+
+## Let's try to classify with gemma3 ollama
+
+```{r}
+
+# ------------------------------------------------------------
+# 0. Configure mall (Adapt to your exact model name)
+# ------------------------------------------------------------
+# Ensure Ollama is running and the model 'gemma3' (or the correct name) is available
+# Using 'gemma3' as you did, but double-check with 'ollama list'
+# Low temperature is preferred for strict instruction following.
+llm_use(backend = "ollama", model = "gemma3:12", temperature = 0.1) # Seed might be useful for reproducibility
+
+# ------------------------------------------------------------
+# 1. Revised Prompt for Multilingual ADE Detection (Task 1)
+# ------------------------------------------------------------
+prompt_final_task1_multilingual <- "
+You are given a single social media post written in English, German, French, or Russian.
+Your task is to classify the post as either:
+- '1' if it mentions at least one Adverse Drug Event (ADE) — a negative medical side effect clearly associated with a drug.
+- '0' if it does not mention any ADE.
+
+Posts may include informal language, sarcasm, or ambiguity. Be conservative: only assign '1' when the ADE mention is clear and drug-related.
+Output only the number: '1' or '0'. No explanation.
+
+Examples:
+German:
+- \"ich hatte Müdigkeit als Auswirkung\" → 1
+- \"Das heisst ja nicht, dass es bei dir genau so sein wird\" → 0
+
+French:
+- \"troubles de la vue, hypertension, saignements\" (caused by hormones) → 1
+- \"je ne vais que très rarement chez eux [...] autopromotion\" → 0
+
+Russian:
+- \"у ребенка сильно изменилось поведение [...] отменили препарат\" → 1
+- \"назначили Тонзилгон [...] горло почти зажило!\" → 0
+
+English:
+- \"trazodone [...] means dopey all day\" → 1
+- \"Exelon stock [...] buy, sell or hold?\" → 0
+
+Now classify this post:"
+
+dev_data_sample <- sample_n(dev_data, 500) # Sample 5 rows for illustration
+dev_data_sample <- preprocess_text(dev_data_sample)
+
+
+# ------------------------------------------------------------
+# 2. Apply the prompt to the dev_data dataframe
+# ------------------------------------------------------------
+resultats_task1 <- dev_data_sample |>
+  llm_custom(text, prompt = prompt_final_task1_multilingual)
+
+dev_data_resultats <- resultats_task1 |>
+  mutate(.pred = str_trim(.pred)) |>
+  mutate(pred_label = if_else(.pred %in% c("0", "1"), .pred, NA_character_)) |>
+  select(-.pred)  # Optional: remove intermediate column
+
+# ------------------------------------------------------------
+# 3. Display results
+# ------------------------------------------------------------
+print("Cleaned predictions with 'pred_label' column:")
+print(dev_data_resultats)
+
+#test_translate <- llm_translate(dev_data_resultats, text, "french")
+table(dev_data_resultats$pred_label)
+table(dev_data_resultats$label)
+```
+
+## Evaluate
+
+```{r}
+evaluate_multilingual <- function(dev_data_results) {
+  languages <- unique(dev_data_results$language)
+  metrics <- data.frame()
+  
+  for (lang in languages) {
+    lang_data <- dev_data_results %>% filter(language == lang)
+    true <- lang_data$label
+    pred <- lang_data$pred_label
+    
+    conf <- confusionMatrix(factor(pred), factor(true), positive = "1")
+    
+    precision <- conf$byClass["Precision"]
+    recall <- conf$byClass["Recall"]
+    f1 <- conf$byClass["F1"]
+    accuracy <- conf$overall["Accuracy"]
+    
+    cat(sprintf("\nMetrics for language: %s\n", toupper(lang)))
+    cat(sprintf("  Precision-%s (Pos): %.4f\n", tolower(lang), precision))
+    cat(sprintf("  Recall-%s    (Pos): %.4f\n", tolower(lang), recall))
+    cat(sprintf("  F1-%s        (Pos): %.4f\n", tolower(lang), f1))
+    cat(sprintf("  Accuracy-%s:        %.4f\n", tolower(lang), accuracy))
+    
+    metrics <- rbind(metrics, data.frame(
+      language = lang,
+      precision = precision,
+      recall = recall,
+      f1 = f1,
+      accuracy = accuracy
+    ))
+  }
+  
+  # Overall metrics (macro & micro averages)
+  overall_precision <- mean(metrics$precision, na.rm = TRUE)
+  overall_recall <- mean(metrics$recall, na.rm = TRUE)
+  overall_f1_macro <- mean(metrics$f1, na.rm = TRUE)
+  
+  # Micro-averaged F1 (global across all data)
+  all_true <- dev_data_results$label
+  all_pred <- dev_data_results$pred_label
+  conf_all <- confusionMatrix(factor(all_pred), factor(all_true), positive = "1")
+  f1_micro <- conf_all$byClass["F1"]
+  acc_all <- conf_all$overall["Accuracy"]
+  
+  cat("\n--- Overall Evaluation Summary (Positive Class Focus) ---\n")
+  cat(sprintf("F1-score across all languages (Positive Class): %.4f  <-- Primary Metric\n", f1_micro))
+  cat(sprintf("Macro F1-score across all languages (Pos Class):%.4f\n", overall_f1_macro))
+  cat(sprintf("Overall Precision (Positive Class):             %.4f\n", overall_precision))
+  cat(sprintf("Overall Recall (Positive Class):                %.4f\n", overall_recall))
+  cat(sprintf("Overall Accuracy across all languages:          %.4f\n", acc_all))
+  
+   # Plot F1-scores
+  ggplot(metrics, aes(x = language, y = f1)) +
+    geom_col(fill = "steelblue") +
+    geom_text(aes(label = sprintf("%.3f", f1)), vjust = -0.3, size = 4.5) +
+    labs(
+      title = "F1-score (Positive Class) per Language",
+      x = "Language",
+      y = "F1-score"
+    ) +
+    ylim(0, 1) +
+    theme_minimal()
+}
+
+evaluate_multilingual(dev_data_resultats)
+```
+
+## Translate with LLM
+
+```{r}
+english_train_data <- train_data %>%
+  filter(language == "en") %>%
+  select(text_clean, label)
+
+# Translate the English data to French
+test <- english_train_data %>%
+  head(5)
+
+test <- test %>%
+  mutate(.translation = llm_vec_translate(text_clean, "french"))
+
+
+```
+

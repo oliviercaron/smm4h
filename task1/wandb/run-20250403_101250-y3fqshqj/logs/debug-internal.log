@@ -1,0 +1,29 @@
+{"time":"2025-04-03T10:12:50.5030658+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250403_101250-y3fqshqj\\logs\\debug-core.log"}
+{"time":"2025-04-03T10:12:50.6126849+02:00","level":"INFO","msg":"created new stream","id":"y3fqshqj"}
+{"time":"2025-04-03T10:12:50.6126849+02:00","level":"INFO","msg":"stream: started","id":"y3fqshqj"}
+{"time":"2025-04-03T10:12:50.6126849+02:00","level":"INFO","msg":"handler: started","stream_id":"y3fqshqj"}
+{"time":"2025-04-03T10:12:50.6126849+02:00","level":"INFO","msg":"sender: started","stream_id":"y3fqshqj"}
+{"time":"2025-04-03T10:12:50.6126849+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"y3fqshqj"}
+{"time":"2025-04-03T10:12:50.8768833+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-03T10:13:05.8867882+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:13:20.8865199+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:13:35.885121+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:13:50.8854998+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:14:05.8851583+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:14:20.8853779+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:14:35.8881405+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:14:50.8841136+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:15:05.8839189+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:15:20.8839855+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:15:35.8853483+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:15:50.8838862+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:16:05.8879753+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:16:20.8838254+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:16:35.8889478+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:16:50.8864645+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:17:05.884993+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:17:20.8858213+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:17:35.8854508+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:17:50.8850742+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:18:05.8855988+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T10:18:13.9537714+02:00","level":"INFO","msg":"Pausing system monitor"}

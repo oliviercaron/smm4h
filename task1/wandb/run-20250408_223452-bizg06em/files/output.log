@@ -1,0 +1,46 @@
+Unexpected exception formatting exception. Falling back to standard exception
+Traceback (most recent call last):
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\IPython\core\interactiveshell.py", line 2144, in showtraceback
+    stb = self.InteractiveTB.structured_traceback(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\IPython\core\ultratb.py", line 1448, in structured_traceback
+    return FormattedTB.structured_traceback(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\IPython\core\ultratb.py", line 1339, in structured_traceback
+    return VerboseTB.structured_traceback(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\IPython\core\ultratb.py", line 1186, in structured_traceback
+    formatted_exception = self.format_exception_as_a_whole(etype, evalue, etb, number_of_lines_of_context,
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\IPython\core\ultratb.py", line 1076, in format_exception_as_a_whole
+    self.get_records(etb, number_of_lines_of_context, tb_offset) if etb else []
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\IPython\core\ultratb.py", line 1173, in get_records
+    res = list(stack_data.FrameInfo.stack_data(etb, options=options))[tb_offset:]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\stack_data\core.py", line 597, in stack_data
+    yield from collapse_repeated(
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\stack_data\utils.py", line 83, in collapse_repeated
+    yield from map(mapper, original_group)
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\stack_data\core.py", line 587, in mapper
+    return cls(f, options)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\stack_data\core.py", line 551, in __init__
+    self.executing = Source.executing(frame_or_tb)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\executing\executing.py", line 264, in executing
+    source = cls.for_frame(frame)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\executing\executing.py", line 183, in for_frame
+    return cls.for_filename(frame.f_code.co_filename, frame.f_globals or {}, use_cache)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\executing\executing.py", line 212, in for_filename
+    return cls._for_filename_and_lines(filename, tuple(lines))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\executing\executing.py", line 223, in _for_filename_and_lines
+    result = source_cache[(filename, lines)] = cls(filename, lines)
+                                               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Olivier\AppData\Roaming\Python\Python312\site-packages\executing\executing.py", line 153, in __init__
+    self.text = ''.join(lines)
+                ^^^^^^^^^^^^^^
+MemoryError

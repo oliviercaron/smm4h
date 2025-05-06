@@ -1,0 +1,151 @@
+Loading data...
+Data loaded.
+Tokenizing data...
+Tokenization complete.
+Cleaning dataset columns...
+Columns before removal: ['id', 'text', 'label', 'file_name', 'origin', 'type', 'language', 'split', 'input_ids', 'attention_mask']
+Removing columns: ['text', 'id', 'file_name', 'origin', 'language', 'split', 'type']
+Columns after cleaning and rename: ['labels', 'input_ids', 'attention_mask']
+Computing class weights...
+Class Weights: tensor([0.5446, 6.0994], device='cuda:0')
+Loading model...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Model loaded.
+Setting training arguments...
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_24588\1485230614.py:161: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(
+Trainer configured.
+Starting Training...
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Training finished.
+
+Evaluating on Development Set (Best Model)...
+Evaluation Results:
+{'eval_loss': 0.3655704855918884, 'eval_accuracy': 0.9461621621621622, 'eval_f1_pos': 0.7017964071856287, 'eval_precision_pos': 0.6704805491990846, 'eval_recall_pos': 0.7361809045226131, 'eval_f1_neg': 0.9704099821746881, 'eval_runtime': 57.9899, 'eval_samples_per_second': 79.755, 'eval_steps_per_second': 39.886, 'epoch': 5.994696824484058}
+
+Generating predictions and detailed metrics for Dev Set...
+
+--- Detailed Evaluation on Development Set ---
+
+Metrics for language: DE
+  Precision-de (Pos): 0.5641
+  Recall-de    (Pos): 0.6286
+  F1-de        (Pos): 0.5946
+  Accuracy-de:        0.9527
+
+Metrics for language: EN
+  Precision-en (Pos): 0.7534
+  Recall-en    (Pos): 0.9016
+  F1-en        (Pos): 0.8209
+  Accuracy-en:        0.9734
+
+Metrics for language: FR
+  Precision-fr (Pos): 0.6410
+  Recall-fr    (Pos): 0.8333
+  F1-fr        (Pos): 0.7246
+  Accuracy-fr:        0.9547
+
+Metrics for language: RU
+  Precision-ru (Pos): 0.6678
+  Recall-ru    (Pos): 0.7022
+  F1-ru        (Pos): 0.6846
+  Accuracy-ru:        0.9341
+
+--- Overall Evaluation Summary (Positive Class Focus) ---
+F1-score across all languages (Positive Class): 0.7018  <-- Primary Metric
+Macro F1-score across all languages (Pos Class):0.7062
+Overall Precision (Positive Class):             0.6705
+Overall Recall (Positive Class):                0.7362
+Overall Accuracy across all languages:          0.9462
+
+Overall Confusion Matrix (All Languages):
+[[TN=4083  FP=144]
+ [FN=105  TP=293]]
+Metrics logged to WandB.
+
+Saving predictions for submission...
+Predictions saved to results_augmentedchatgpt_xlmr_large_optimized\predictions_task1.csv
+predictions_task1.csv has been zipped into results_augmentedchatgpt_xlmr_large_optimized\submission_task1.zip
+
+Script finished.
+
+Evaluating on Development Set (Best Model)...
+Evaluation Results (using default 0.5 threshold):
+{'eval_loss': 0.3655704855918884, 'eval_accuracy': 0.9461621621621622, 'eval_f1_pos': 0.7017964071856287, 'eval_precision_pos': 0.6704805491990846, 'eval_recall_pos': 0.7361809045226131, 'eval_f1_neg': 0.9704099821746881, 'eval_runtime': 61.5216, 'eval_samples_per_second': 75.177, 'eval_steps_per_second': 37.597, 'epoch': 5.994696824484058}
+
+--- Performing Threshold Tuning on Validation Set ---
+Best threshold found: 0.5900
+Corresponding F1 Score (Positive Class) on Dev Set: 0.7087
+F1 vs Threshold plot saved to results_augmentedchatgpt_xlmr_large_optimized\f1_vs_threshold_tuning.png
+
+Generating predictions and detailed metrics for Dev Set using OPTIMAL threshold...
+
+--- Detailed Evaluation on Development Set (Using Threshold: 0.5900) ---
+
+Metrics for language: DE
+  Precision-de (Pos): 0.5946
+  Recall-de    (Pos): 0.6286
+  F1-de        (Pos): 0.6111
+  Accuracy-de:       0.9558
+
+Metrics for language: EN
+  Precision-en (Pos): 0.7534
+  Recall-en    (Pos): 0.9016
+  F1-en        (Pos): 0.8209
+  Accuracy-en:       0.9734
+
+Metrics for language: FR
+  Precision-fr (Pos): 0.6579
+  Recall-fr    (Pos): 0.8333
+  F1-fr        (Pos): 0.7353
+  Accuracy-fr:       0.9570
+
+Metrics for language: RU
+  Precision-ru (Pos): 0.6835
+  Recall-ru    (Pos): 0.6985
+  F1-ru        (Pos): 0.6909
+  Accuracy-ru:       0.9363
+
+--- Overall Evaluation Summary (Positive Class Focus - AFTER Tuning) ---
+Optimal Threshold Applied: 0.5900
+F1-score across all languages (Positive Class): 0.7087  <-- Tuned Primary Metric
+Macro F1-score across all languages (Pos Class):0.7146
+Overall Precision (Positive Class):            0.6854
+Overall Recall (Positive Class):               0.7337
+Overall Accuracy across all languages:         0.9481
+
+Overall Confusion Matrix (All Languages - Tuned):
+[[TN=4093  FP=134]
+ [FN=106  TP=292]]
+Tuned Metrics logged to WandB.
+
+Saving predictions for submission (using optimal threshold)...
+Predictions saved to results_augmentedchatgpt_xlmr_large_optimized\predictions_task1.csv
+predictions_task1.csv has been zipped into results_augmentedchatgpt_xlmr_large_optimized\submission_task1.zip
+
+Script finished.
+wandb: WARNING Calling wandb.login() after wandb.init() has no effect.
+PyTorch version: 2.6.0+cu124
+CUDA available: True
+CUDA device: NVIDIA GeForce RTX 3070
+CUDA capability: (8, 6)
+BF16 supported: True
+Calcul des poids des classes...
+Poids des classes calculés: [0.5426468 6.3620973]
+
+===================================
+   LANCEMENT DE L'ÉTUDE OPTUNA
+===================================
+
+Pré-tokenisation initiale (peut être refaite dans les trials si max_length varie)...
+Chargement des données depuis data/train_data_SMM4H_2025_Task_1.csv et data/dev_data_SMM4H_2025_Task_1.csv...
+Train shape: (31187, 8), Dev shape: (4625, 8)
+Données chargées.
+Tokenisation des données (max_length=256)...
+Tokenisation terminée.
+Nettoyage des colonnes inutiles...
+Colonnes avant nettoyage: ['id', 'text', 'label', 'file_name', 'origin', 'type', 'language', 'split', 'input_ids', 'attention_mask']
+Colonnes à supprimer: ['text', 'id', 'file_name', 'origin', 'language', 'split', 'type']
+Colonnes après nettoyage: ['labels', 'input_ids', 'attention_mask']
+[I 2025-04-07 03:11:41,768] A new study created in RDB with name: ade-classification-xlmr-large-study

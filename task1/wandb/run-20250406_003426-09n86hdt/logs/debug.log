@@ -1,0 +1,113 @@
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_setup.py:_flush():67] Current SDK version is 0.19.8
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_setup.py:_flush():67] Configure stats pid to 12976
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_setup.py:_flush():67] Loading settings from C:\Users\Olivier\.config\wandb\settings
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_setup.py:_flush():67] Loading settings from c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\settings
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003426-09n86hdt\logs\debug.log
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003426-09n86hdt\logs\debug-internal.log
+2025-04-06 00:34:26,175 INFO    MainThread:12976 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001972D17F6E0>
+2025-04-06 00:34:26,176 INFO    MainThread:12976 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:34:26,176 INFO    MainThread:12976 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['q_proj', 'v_proj'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, '_wandb': {}}
+2025-04-06 00:34:26,176 INFO    MainThread:12976 [wandb_init.py:init():784] starting backend
+2025-04-06 00:34:26,176 INFO    MainThread:12976 [wandb_init.py:init():788] sending inform_init request
+2025-04-06 00:34:26,299 INFO    MainThread:12976 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-04-06 00:34:26,299 INFO    MainThread:12976 [wandb_init.py:init():798] backend started and connected
+2025-04-06 00:34:26,305 INFO    MainThread:12976 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-04-06 00:34:26,306 INFO    MainThread:12976 [wandb_run.py:_label_probe_notebook():1214] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 116259: character maps to <undefined>
+2025-04-06 00:34:26,306 INFO    MainThread:12976 [wandb_init.py:init():891] updated telemetry
+2025-04-06 00:34:26,347 INFO    MainThread:12976 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-06 00:34:26,605 INFO    MainThread:12976 [wandb_init.py:init():990] starting run threads in backend
+2025-04-06 00:34:27,086 INFO    MainThread:12976 [wandb_run.py:_console_start():2375] atexit reg
+2025-04-06 00:34:27,086 INFO    MainThread:12976 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-06 00:34:27,087 INFO    MainThread:12976 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-06 00:34:27,087 INFO    MainThread:12976 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-04-06 00:34:27,089 INFO    MainThread:12976 [wandb_init.py:init():1032] run started, returning control to user process
+2025-04-06 00:34:36,221 INFO    MainThread:12976 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:34:37,734 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:34:37,734 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:34:58,009 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:34:58,022 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:34:58,022 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:34:58,109 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:34:58,122 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:34:58,134 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:34:58,164 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:34:58,182 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:34:58,183 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:35:37,428 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:35:37,443 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003537-qlwdx9ef\logs\debug.log
+2025-04-06 00:35:37,444 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003537-qlwdx9ef\logs\debug-internal.log
+2025-04-06 00:35:37,444 INFO    MainThread:12976 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:35:37,444 INFO    MainThread:12976 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['query', 'value'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, '_wandb': {}}
+2025-04-06 00:35:37,444 INFO    MainThread:12976 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-06 00:35:46,272 INFO    MainThread:12976 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:35:47,976 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:35:47,976 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:36:00,533 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:36:00,545 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:36:00,546 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:36:00,590 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:36:00,604 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:36:00,607 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:36:00,638 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:36:00,658 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:36:00,658 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:36:44,384 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:36:44,399 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003644-33cxii33\logs\debug.log
+2025-04-06 00:36:44,400 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003644-33cxii33\logs\debug-internal.log
+2025-04-06 00:36:44,400 INFO    MainThread:12976 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:36:44,400 INFO    MainThread:12976 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['query', 'value'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, '_wandb': {}}
+2025-04-06 00:36:44,400 INFO    MainThread:12976 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-06 00:36:53,281 INFO    MainThread:12976 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:36:54,480 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:36:54,480 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:37:03,699 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:37:03,713 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:37:03,713 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:37:03,761 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:37:03,776 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:37:03,790 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:37:03,821 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:37:03,842 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:37:03,843 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:37:31,042 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:37:31,060 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003731-sqstzz7e\logs\debug.log
+2025-04-06 00:37:31,060 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_003731-sqstzz7e\logs\debug-internal.log
+2025-04-06 00:37:31,060 INFO    MainThread:12976 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:37:31,060 INFO    MainThread:12976 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['query', 'value'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, '_wandb': {}}
+2025-04-06 00:37:31,060 INFO    MainThread:12976 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-06 00:37:39,949 INFO    MainThread:12976 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:37:41,291 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:37:41,291 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:40:52,614 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:40:52,633 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_004052-sfgfmo81\logs\debug.log
+2025-04-06 00:40:52,633 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_004052-sfgfmo81\logs\debug-internal.log
+2025-04-06 00:40:52,633 INFO    MainThread:12976 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:40:52,633 INFO    MainThread:12976 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['query', 'value'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, 'modules_to_save': ['classifier'], '_wandb': {}}
+2025-04-06 00:40:52,633 INFO    MainThread:12976 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-06 00:41:01,703 INFO    MainThread:12976 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:41:03,101 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:41:03,102 INFO    MainThread:12976 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-06 00:43:42,433 INFO    MainThread:12976 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-06 00:43:42,457 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_004342-pr3sf3xh\logs\debug.log
+2025-04-06 00:43:42,458 INFO    MainThread:12976 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_004342-pr3sf3xh\logs\debug-internal.log
+2025-04-06 00:43:42,458 INFO    MainThread:12976 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:43:42,458 INFO    MainThread:12976 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['query', 'value'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, 'modules_to_save': ['classifier'], 'fix_applied': 'manual_classifier_cast_float32', '_wandb': {}}
+2025-04-06 00:43:42,458 INFO    MainThread:12976 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-06 00:43:51,577 INFO    MainThread:12976 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:43:52,907 INFO    MainThread:12976 [wandb_run.py:_finish():2112] finishing run caron-olivier-80-universit-paris-dauphine-psl/ade-classification-xlmr-large-qlora/09n86hdt
+2025-04-06 00:43:52,908 INFO    MainThread:12976 [jupyter.py:save_history():458] not saving jupyter history
+2025-04-06 00:43:52,908 INFO    MainThread:12976 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:43:52,908 INFO    MainThread:12976 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-04-06 00:43:52,909 INFO    MainThread:12976 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-04-06 00:43:52,909 INFO    MainThread:12976 [wandb_run.py:_restore():2322] restore
+2025-04-06 00:43:52,909 INFO    MainThread:12976 [wandb_run.py:_restore():2328] restore done
+2025-04-06 00:43:54,131 INFO    MainThread:12976 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-04-06 00:43:54,132 INFO    MainThread:12976 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-04-06 00:43:54,132 INFO    MainThread:12976 [wandb_run.py:_footer_sync_info():3917] logging synced files

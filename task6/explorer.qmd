@@ -32,6 +32,212 @@ legend.title = element_blank()
 )
 ```
 
+```{r}
+sample_test$labels[1] <- 0
+sample_test$labels[2] <- 1
+sample_test$labels[3] <- 1
+sample_test$labels[4] <- 0
+sample_test$labels[5] <- 0
+sample_test$labels[6] <- 0
+sample_test$labels[7] <- 0
+sample_test$labels[8] <- 1
+sample_test$labels[9] <- 0
+sample_test$labels[10] <- 0
+sample_test$labels[11] <- 0
+sample_test$labels[12] <- 1
+sample_test$labels[13] <- 1
+sample_test$labels[14] <- 0
+sample_test$labels[15] <- 0
+sample_test$labels[16] <- 0
+sample_test$labels[17] <- 0
+sample_test$labels[18] <- 0
+sample_test$labels[19] <- 0
+sample_test$labels[20] <- 1
+sample_test$labels[21] <- 0
+sample_test$labels[22] <- 1
+sample_test$labels[23] <- 0
+sample_test$labels[24] <- 1
+sample_test$labels[25] <- 0
+sample_test$labels[26] <- 0
+sample_test$labels[27] <- 0
+sample_test$labels[28] <- 1
+sample_test$labels[29] <- 1
+sample_test$labels[30] <- 1
+sample_test$labels[31] <- 1
+sample_test$labels[32] <- 1
+sample_test$labels[33] <- 0
+sample_test$labels[34] <- 0
+sample_test$labels[35] <- 0
+sample_test$labels[36] <- 1
+sample_test$labels[37] <- 1
+sample_test$labels[38] <- 1
+sample_test$labels[39] <- 0
+sample_test$labels[40] <- 1
+sample_test$labels[41] <- 0
+sample_test$labels[42] <- 0
+sample_test$labels[43] <- 0
+sample_test$labels[44] <- 1
+sample_test$labels[45] <- 0
+sample_test$labels[46] <- 0
+sample_test$labels[47] <- 0
+sample_test$labels[48] <- 0
+sample_test$labels[49] <- 1
+sample_test$labels[50] <- 1
+sample_test$labels[51] <- 1
+sample_test$labels[52] <- 1
+sample_test$labels[53] <- 0
+sample_test$labels[54] <- 0
+sample_test$labels[55] <- 0
+sample_test$labels[56] <- 0
+sample_test$labels[57] <- 0
+sample_test$labels[58] <- 1
+sample_test$labels[59] <- 0
+sample_test$labels[60] <- 1
+sample_test$labels[61] <- 0
+sample_test$labels[62] <- 1
+sample_test$labels[63] <- 0
+sample_test$labels[64] <- 0
+sample_test$labels[65] <- 0
+sample_test$labels[66] <- 0
+sample_test$labels[67] <- 1
+sample_test$labels[68] <- 1
+sample_test$labels[69] <- 1
+sample_test$labels[70] <- 0
+sample_test$labels[71] <- 0
+sample_test$labels[72] <- 1
+sample_test$labels[73] <- 1
+sample_test$labels[74] <- 0
+sample_test$labels[75] <- 0
+sample_test$labels[76] <- 0
+sample_test$labels[77] <- 0
+sample_test$labels[78] <- 1
+sample_test$labels[79] <- 0
+sample_test$labels[80] <- 0
+sample_test$labels[81] <- 1
+sample_test$labels[82] <- 1
+sample_test$labels[83] <- 0
+sample_test$labels[84] <- 0
+sample_test$labels[85] <- 0
+sample_test$labels[86] <- 1
+sample_test$labels[87] <- 1
+sample_test$labels[88] <- 1
+sample_test$labels[89] <- 0
+sample_test$labels[90] <- 0
+sample_test$labels[91] <- 0
+sample_test$labels[92] <- 1
+sample_test$labels[93] <- 1
+sample_test$labels[94] <- 1
+sample_test$labels[95] <- 1
+sample_test$labels[96] <- 1
+sample_test$labels[97] <- 0
+sample_test$labels[98] <- 1
+sample_test$labels[99] <- 1
+sample_test$labels[100] <- 1
+sample_test$labels[101] <- 0
+sample_test$labels[102] <- 0
+sample_test$labels[103] <- 0
+sample_test$labels[104] <- 0
+sample_test$labels[105] <- 1
+sample_test$labels[106] <- 1
+sample_test$labels[107] <- 0
+sample_test$labels[108] <- 1
+sample_test$labels[109] <- 0
+sample_test$labels[110] <- 1
+sample_test$labels[111] <- 1
+sample_test$labels[112] <- 1
+sample_test$labels[113] <- 1
+sample_test$labels[114] <- 0
+sample_test$labels[115] <- 1
+sample_test$labels[116] <- 0
+sample_test$labels[117] <- 0
+sample_test$labels[118] <- 0
+sample_test$labels[119] <- 0
+sample_test$labels[120] <- 0
+sample_test$labels[121] <- 1
+sample_test$labels[122] <- 0
+sample_test$labels[123] <- 1
+sample_test$labels[124] <- 1
+sample_test$labels[125] <- 1
+sample_test$labels[126] <- 1
+sample_test$labels[127] <- 1
+sample_test$labels[128] <- 1
+sample_test$labels[129] <- 1
+sample_test$labels[130] <- 0
+sample_test$labels[131] <- 1
+sample_test$labels[132] <- 1
+sample_test$labels[133] <- 0
+sample_test$labels[134] <- 1
+sample_test$labels[135] <- 1
+sample_test$labels[136] <- 1
+sample_test$labels[137] <- 1
+sample_test$labels[138] <- 0
+sample_test$labels[139] <- 1
+sample_test$labels[140] <- 0
+sample_test$labels[141] <- 0
+sample_test$labels[142] <- 0
+sample_test$labels[143] <- 1
+sample_test$labels[144] <- 0
+sample_test$labels[145] <- 0
+sample_test$labels[146] <- 0
+sample_test$labels[147] <- 0
+sample_test$labels[148] <- 0
+sample_test$labels[149] <- 1
+sample_test$labels[150] <- 0
+sample_test$labels[151] <- 0
+sample_test$labels[152] <- 1
+sample_test$labels[153] <- 1
+sample_test$labels[154] <- 1
+sample_test$labels[155] <- 1
+sample_test$labels[156] <- 1
+sample_test$labels[157] <- 1
+sample_test$labels[158] <- 1
+sample_test$labels[159] <- 1
+sample_test$labels[160] <- 1
+sample_test$labels[161] <- 0
+sample_test$labels[162] <- 1
+sample_test$labels[163] <- 0
+sample_test$labels[164] <- 1
+sample_test$labels[165] <- 1
+sample_test$labels[166] <- 1
+sample_test$labels[167] <- 0
+sample_test$labels[168] <- 0
+sample_test$labels[169] <- 0
+sample_test$labels[170] <- 1
+sample_test$labels[171] <- 0
+sample_test$labels[172] <- 0
+sample_test$labels[173] <- 1
+sample_test$labels[174] <- 1
+sample_test$labels[175] <- 1
+sample_test$labels[176] <- 0
+sample_test$labels[177] <- 0
+sample_test$labels[178] <- 1
+sample_test$labels[179] <- 0
+sample_test$labels[180] <- 1
+sample_test$labels[181] <- 1
+sample_test$labels[182] <- 0
+sample_test$labels[183] <- 0
+sample_test$labels[184] <- 0
+sample_test$labels[185] <- 1
+sample_test$labels[186] <- 0
+sample_test$labels[187] <- 0
+sample_test$labels[188] <- 1
+sample_test$labels[189] <- 0
+sample_test$labels[190] <- 0
+sample_test$labels[191] <- 1
+sample_test$labels[192] <- 0
+sample_test$labels[193] <- 1
+sample_test$labels[194] <- 1
+sample_test$labels[195] <- 1
+sample_test$labels[196] <- 1
+sample_test$labels[197] <- 1
+sample_test$labels[198] <- 0
+sample_test$labels[199] <- 0
+sample_test$labels[200] <- 1
+
+
+
+```
+
 ## Running Code
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
@@ -39,7 +245,13 @@ When you click the **Render** button a document will be generated that includes 
 ```{r}
 # Charger les données
 train_data <- read_csv("data/train.csv")
-valid_data <- read_csv("data/valid.csv") 
+valid_data <- read_csv("data/valid.csv")
+test_with_label <- read_csv("data/test_with_label.csv")
+
+sample_test <- sample_n(test_with_label,500) %>%
+  mutate(labels="")
+
+write.csv(sample_test, "data/test_with_labels.csv")
 
 # We'll rename columns for clarity if needed
 colnames(train_data) <- c("id", "text", "label")

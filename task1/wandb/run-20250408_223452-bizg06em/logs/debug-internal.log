@@ -1,0 +1,9 @@
+{"time":"2025-04-08T22:34:52.4534994+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250408_223452-bizg06em\\logs\\debug-core.log"}
+{"time":"2025-04-08T22:34:52.5625962+02:00","level":"INFO","msg":"created new stream","id":"bizg06em"}
+{"time":"2025-04-08T22:34:52.5625962+02:00","level":"INFO","msg":"stream: started","id":"bizg06em"}
+{"time":"2025-04-08T22:34:52.5625962+02:00","level":"INFO","msg":"handler: started","stream_id":"bizg06em"}
+{"time":"2025-04-08T22:34:52.5625962+02:00","level":"INFO","msg":"sender: started","stream_id":"bizg06em"}
+{"time":"2025-04-08T22:34:52.5625962+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"bizg06em"}
+{"time":"2025-04-08T22:34:52.8690451+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T22:35:07.8785322+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-08T22:35:11.7657716+02:00","level":"INFO","msg":"Pausing system monitor"}

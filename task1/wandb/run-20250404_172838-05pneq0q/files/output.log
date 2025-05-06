@@ -1,0 +1,78 @@
+Loading data...
+Data loaded.
+Tokenizing data...
+Tokenization complete.
+Cleaning dataset columns...
+Columns before removal: ['id', 'text', 'label', 'file_name', 'origin', 'type', 'language', 'split', 'input_ids', 'attention_mask']
+Removing columns: ['text', 'id', 'file_name', 'origin', 'language', 'split', 'type']
+Columns after cleaning and rename: ['labels', 'input_ids', 'attention_mask']
+Computing class weights...
+Class Weights: tensor([0.5826, 3.5274], device='cuda:0')
+Loading model...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Model loaded.
+Setting training arguments...
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\training_args.py:1611: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_25784\3646678359.py:140: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(
+Trainer configured.
+Starting Training...
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Training finished.
+
+Evaluating on Development Set (Best Model)...
+Evaluation Results:
+{'eval_loss': 0.9245741367340088, 'eval_accuracy': 0.9418378378378378, 'eval_f1_pos': 0.6723507917174177, 'eval_precision_pos': 0.6524822695035462, 'eval_recall_pos': 0.6934673366834171, 'eval_f1_neg': 0.9680863684897378, 'eval_runtime': 10.1814, 'eval_samples_per_second': 454.259, 'eval_steps_per_second': 28.483, 'epoch': 7.992833253702819}
+
+Generating predictions and detailed metrics for Dev Set...
+
+--- Detailed Evaluation on Development Set ---
+
+Metrics for language: DE
+  Precision-de (Pos): 0.4889
+  Recall-de    (Pos): 0.6286
+  F1-de        (Pos): 0.5500
+  Accuracy-de:        0.9432
+
+Metrics for language: EN
+  Precision-en (Pos): 0.7385
+  Recall-en    (Pos): 0.7869
+  F1-en        (Pos): 0.7619
+  Accuracy-en:        0.9667
+
+Metrics for language: FR
+  Precision-fr (Pos): 0.4894
+  Recall-fr    (Pos): 0.7667
+  F1-fr        (Pos): 0.5974
+  Accuracy-fr:        0.9260
+
+Metrics for language: RU
+  Precision-ru (Pos): 0.6880
+  Recall-ru    (Pos): 0.6728
+  F1-ru        (Pos): 0.6803
+  Accuracy-ru:        0.9356
+
+--- Overall Evaluation Summary (Positive Class Focus) ---
+F1-score across all languages (Positive Class): 0.6724  <-- Primary Metric
+Macro F1-score across all languages (Pos Class):0.6474
+Overall Precision (Positive Class):             0.6525
+Overall Recall (Positive Class):                0.6935
+Overall Accuracy across all languages:          0.9418
+
+Overall Confusion Matrix (All Languages):
+[[TN=4080  FP=147]
+ [FN=122  TP=276]]
+Metrics logged to WandB.
+
+Saving predictions for submission...
+Predictions saved to results_xlmr_augmented_longer_train\predictions_task1.csv
+predictions_task1.csv has been zipped into results_xlmr_augmented_longer_train\submission_task1.zip
+
+Script finished.
+--- Initial Data Loading and Cleaning ---
+Loaded 33482 train and 4625 dev examples.
+Text cleaning complete.
+
+--- Phase 1: Starting SimCSE Pre-training ---

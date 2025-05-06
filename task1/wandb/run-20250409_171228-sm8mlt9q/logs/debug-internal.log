@@ -1,0 +1,31 @@
+{"time":"2025-04-09T17:12:28.4599702+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250409_171228-sm8mlt9q\\logs\\debug-core.log"}
+{"time":"2025-04-09T17:12:28.5682913+02:00","level":"INFO","msg":"created new stream","id":"sm8mlt9q"}
+{"time":"2025-04-09T17:12:28.5682913+02:00","level":"INFO","msg":"stream: started","id":"sm8mlt9q"}
+{"time":"2025-04-09T17:12:28.5682913+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"sm8mlt9q"}
+{"time":"2025-04-09T17:12:28.5682913+02:00","level":"INFO","msg":"sender: started","stream_id":"sm8mlt9q"}
+{"time":"2025-04-09T17:12:28.5682913+02:00","level":"INFO","msg":"handler: started","stream_id":"sm8mlt9q"}
+{"time":"2025-04-09T17:12:28.7662851+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-09T17:12:30.1349174+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:13:36.8190512+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:13:37.2257149+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:13:58.7998419+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:13:58.8178036+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:13:58.8590063+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:13:58.8805186+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:13:58.9138517+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:13:58.9343138+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:14:14.9211816+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:14:15.2174819+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:14:19.4607837+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:14:19.4968127+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:14:19.5259204+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:14:19.5427275+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:14:19.5724551+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:14:19.5944599+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:14:41.8047433+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:14:43.7725609+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T17:14:58.7739458+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T17:15:07.9992928+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-09T17:16:30.4616716+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-09T17:16:43.7740042+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T17:16:44.4951391+02:00","level":"INFO","msg":"Pausing system monitor"}

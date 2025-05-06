@@ -1,0 +1,18 @@
+{"time":"2025-04-03T23:40:59.7597152+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250403_234059-416c4ym1\\logs\\debug-core.log"}
+{"time":"2025-04-03T23:40:59.8694919+02:00","level":"INFO","msg":"created new stream","id":"416c4ym1"}
+{"time":"2025-04-03T23:40:59.8694919+02:00","level":"INFO","msg":"stream: started","id":"416c4ym1"}
+{"time":"2025-04-03T23:40:59.8694919+02:00","level":"INFO","msg":"handler: started","stream_id":"416c4ym1"}
+{"time":"2025-04-03T23:40:59.8694919+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"416c4ym1"}
+{"time":"2025-04-03T23:40:59.8694919+02:00","level":"INFO","msg":"sender: started","stream_id":"416c4ym1"}
+{"time":"2025-04-03T23:41:00.0821168+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-03T23:41:04.8910202+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-04T00:05:37.3987769+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-04T00:05:37.868994+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-04T00:05:37.8699947+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-04T00:05:38.8740247+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6792825,"progress":"199B/199B"},{"desc":"uploading config.yaml","runtime_seconds":0.5233448,"progress":"1.2KB/1.2KB"}],"total_operations":2}}
+{"time":"2025-04-04T00:05:39.0063096+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-04T00:05:39.2771361+02:00","level":"INFO","msg":"stream: closing","id":"416c4ym1"}
+{"time":"2025-04-04T00:05:39.2771361+02:00","level":"INFO","msg":"handler: closed","stream_id":"416c4ym1"}
+{"time":"2025-04-04T00:05:39.2771361+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"416c4ym1"}
+{"time":"2025-04-04T00:05:39.2781359+02:00","level":"INFO","msg":"sender: closed","stream_id":"416c4ym1"}
+{"time":"2025-04-04T00:05:39.2781359+02:00","level":"INFO","msg":"stream: closed","id":"416c4ym1"}

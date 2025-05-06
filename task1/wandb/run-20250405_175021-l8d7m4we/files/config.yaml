@@ -1,0 +1,76 @@
+_wandb:
+    value:
+        cli_version: 0.19.8
+        m: []
+        python_version: 3.12.2
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 51
+                - 53
+                - 55
+                - 71
+                - 98
+                - 105
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 51
+                - 53
+                - 55
+                - 71
+                - 98
+                - 105
+            "3":
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.12.2
+            "5": 0.19.8
+            "6": 4.50.0
+            "8":
+                - 1
+                - 3
+                - 5
+            "12": 0.19.8
+            "13": windows-amd64
+base_model:
+    value: xlm-roberta-large
+batch_size_per_device:
+    value: 2
+class_weights:
+    value:
+        - 0.5426468253135681
+        - 6.362097263336182
+effective_batch_size:
+    value: 32
+gradient_accumulation:
+    value: 16
+learning_rate:
+    value: 2e-05
+lora_target_modules:
+    value:
+        - q_proj
+        - v_proj
+max_length:
+    value: 256
+num_epochs:
+    value: 5
+qlora_enabled:
+    value: true
+train_data:
+    value: data/train_data_SMM4H_2025_Task_1.csv

@@ -1,0 +1,16 @@
+{"time":"2025-04-08T01:19:21.0448845+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250408_011920-6kte7nuk\\logs\\debug-core.log"}
+{"time":"2025-04-08T01:19:21.1545225+02:00","level":"INFO","msg":"created new stream","id":"6kte7nuk"}
+{"time":"2025-04-08T01:19:21.1545225+02:00","level":"INFO","msg":"stream: started","id":"6kte7nuk"}
+{"time":"2025-04-08T01:19:21.1545225+02:00","level":"INFO","msg":"sender: started","stream_id":"6kte7nuk"}
+{"time":"2025-04-08T01:19:21.1545225+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6kte7nuk"}
+{"time":"2025-04-08T01:19:21.1545225+02:00","level":"INFO","msg":"handler: started","stream_id":"6kte7nuk"}
+{"time":"2025-04-08T01:19:21.3834832+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-08T01:29:45.7026685+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:29:45.9048655+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:29:55.4566934+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T09:17:11.5974117+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/caron-olivier-80-universit-paris-dauphine-psl/huggingface/6kte7nuk/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-08T09:17:13.9403838+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/caron-olivier-80-universit-paris-dauphine-psl/huggingface/6kte7nuk/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-08T09:17:23.9861714+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:54240->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}
+{"time":"2025-04-08T21:48:25.1603995+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/caron-olivier-80-universit-paris-dauphine-psl/huggingface/6kte7nuk/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-08T21:48:27.5065212+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/caron-olivier-80-universit-paris-dauphine-psl/huggingface/6kte7nuk/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-04-08T21:48:35.0948862+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 192.168.1.10:60826->35.186.228.49:443: wsarecv: An existing connection was forcibly closed by the remote host."}

@@ -1,0 +1,38 @@
+ERROR during training/saving for Fold 1: WeightedOrStandardTrainer.compute_loss() got an unexpected keyword argument 'num_items_in_batch'
+
+===== Fold 2/5 =====
+Training fold size: 28649
+Validation fold size: 7163
+Calculating class weights for the training fold...
+Class Weights computed for Fold 2: [0.5432119965553284, 6.2854323387146]
+Train fold class counts: Neg=26370, Pos=2279 (Ratio ~11.6:1)
+Weights will be applied in loss calculation.
+Tokenizing fold data...
+Tokenization and format setting complete for fold.
+Loading model xlm-roberta-base for Fold 2...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Gradient Checkpointing Enabled.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_6976\402079506.py:86: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedOrStandardTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args, **kwargs)
+Trainer initialized to use class weights: [0.5432119965553284, 6.2854323387146]
+Starting Training for Fold 2...
+ERROR during training/saving for Fold 2: WeightedOrStandardTrainer.compute_loss() got an unexpected keyword argument 'num_items_in_batch'
+
+===== Fold 3/5 =====
+Training fold size: 28650
+Validation fold size: 7162
+Calculating class weights for the training fold...
+Class Weights computed for Fold 3: [0.5432103276252747, 6.285651683807373]
+Train fold class counts: Neg=26371, Pos=2279 (Ratio ~11.6:1)
+Weights will be applied in loss calculation.
+Tokenizing fold data...
+Tokenization and format setting complete for fold.
+Loading model xlm-roberta-base for Fold 3...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Gradient Checkpointing Enabled.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_6976\402079506.py:86: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedOrStandardTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args, **kwargs)
+Trainer initialized to use class weights: [0.5432103276252747, 6.285651683807373]
+Starting Training for Fold 3...

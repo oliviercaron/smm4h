@@ -1,0 +1,31 @@
+2025-04-06 00:56:06,296 INFO    MainThread:25148 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_005606-rlia96d0\logs\debug.log
+2025-04-06 00:56:06,296 INFO    MainThread:25148 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250406_005606-rlia96d0\logs\debug-internal.log
+2025-04-06 00:56:06,296 INFO    MainThread:25148 [wandb_init.py:monkeypatch_ipython():599] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000023327610AA0>
+2025-04-06 00:56:06,296 INFO    MainThread:25148 [wandb_init.py:init():761] calling init triggers
+2025-04-06 00:56:06,296 INFO    MainThread:25148 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['query', 'value'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, 'modules_to_save': ['classifier'], 'fix_applied': 'v4_explicit_collator_dataloader_workers_0', '_wandb': {}}
+2025-04-06 00:56:06,297 INFO    MainThread:25148 [wandb_init.py:init():784] starting backend
+2025-04-06 00:56:06,297 INFO    MainThread:25148 [wandb_init.py:init():788] sending inform_init request
+2025-04-06 00:56:06,299 INFO    MainThread:25148 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-04-06 00:56:06,299 INFO    MainThread:25148 [wandb_init.py:init():798] backend started and connected
+2025-04-06 00:56:06,305 INFO    MainThread:25148 [wandb_run.py:_label_probe_notebook():1204] probe notebook
+2025-04-06 00:56:06,318 INFO    MainThread:25148 [wandb_run.py:_label_probe_notebook():1214] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 116259: character maps to <undefined>
+2025-04-06 00:56:06,318 INFO    MainThread:25148 [wandb_init.py:init():891] updated telemetry
+2025-04-06 00:56:21,973 INFO    MainThread:25148 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-04-06 00:56:22,168 INFO    MainThread:25148 [wandb_init.py:init():990] starting run threads in backend
+2025-04-06 00:56:22,621 INFO    MainThread:25148 [wandb_run.py:_console_start():2375] atexit reg
+2025-04-06 00:56:22,621 INFO    MainThread:25148 [wandb_run.py:_redirect():2227] redirect: wrap_raw
+2025-04-06 00:56:22,621 INFO    MainThread:25148 [wandb_run.py:_redirect():2292] Wrapping output streams.
+2025-04-06 00:56:22,621 INFO    MainThread:25148 [wandb_run.py:_redirect():2315] Redirects installed.
+2025-04-06 00:56:22,622 INFO    MainThread:25148 [wandb_init.py:init():1032] run started, returning control to user process
+2025-04-06 00:56:31,146 INFO    MainThread:25148 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-06 00:56:32,873 INFO    MainThread:25148 [wandb_run.py:_finish():2112] finishing run caron-olivier-80-universit-paris-dauphine-psl/ade-classification-xlmr-large-qlora/rlia96d0
+2025-04-06 00:56:32,874 INFO    MainThread:25148 [jupyter.py:save_history():458] not saving jupyter history
+2025-04-06 00:56:32,874 INFO    MainThread:25148 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-06 00:56:32,874 INFO    MainThread:25148 [wandb_init.py:_jupyter_teardown():581] cleaning up jupyter logic
+2025-04-06 00:56:32,874 INFO    MainThread:25148 [wandb_run.py:_atexit_cleanup():2340] got exitcode: 1
+2025-04-06 00:56:32,874 INFO    MainThread:25148 [wandb_run.py:_restore():2322] restore
+2025-04-06 00:56:32,875 INFO    MainThread:25148 [wandb_run.py:_restore():2328] restore done
+2025-04-06 00:56:33,942 INFO    MainThread:25148 [wandb_run.py:_footer_history_summary_info():3956] rendering history
+2025-04-06 00:56:33,943 INFO    MainThread:25148 [wandb_run.py:_footer_history_summary_info():3988] rendering summary
+2025-04-06 00:56:33,943 INFO    MainThread:25148 [wandb_run.py:_footer_sync_info():3917] logging synced files

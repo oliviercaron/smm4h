@@ -1,0 +1,133 @@
+Loading data...
+Data loaded.
+Tokenizing data...
+Loading data...
+Data loaded.
+Tokenizing data...
+Loading data...
+Data loaded.
+Tokenizing data...
+Loading data...
+Data loaded.
+Tokenizing data...
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+Tokenization complete.
+Cleaning dataset columns...
+Columns before removal: ['id', 'text', 'label', 'file_name', 'origin', 'type', 'language', 'split', 'input_ids', 'token_type_ids', 'attention_mask']
+Removing columns: ['text', 'id', 'file_name', 'origin', 'language', 'split', 'type']
+Columns after cleaning and rename: ['labels', 'input_ids', 'token_type_ids', 'attention_mask']
+Computing class weights...
+Class Weights: tensor([0.5426, 6.3621], device='cuda:0')
+Loading model...
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Model loaded.
+Dropout increased: hidden_dropout=0.3, attention_dropout=0.3
+Setting training arguments...
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_21464\754797739.py:170: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(
+Trainer configured.
+Starting Training...
+wandb: WARNING The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+Training finished.
+
+Evaluating on Development Set (Best Model)...
+Evaluation Results:
+{'eval_loss': 0.25557541847229004, 'eval_accuracy': 0.9353513513513514, 'eval_f1_pos': 0.6621468926553672, 'eval_precision_pos': 0.6016427104722792, 'eval_recall_pos': 0.7361809045226131, 'eval_f1_neg': 0.9642558278541542, 'eval_runtime': 51.7866, 'eval_samples_per_second': 89.309, 'eval_steps_per_second': 44.664, 'epoch': 5.999358727715788}
+
+Generating predictions and detailed metrics for Dev Set...
+
+Running threshold tuning on positive class...
+Baseline F1 (argmax): 0.6621
+Best threshold found: 0.6300 → Tuned F1: 0.6713
+Threshold saved to results_deberta-v3-large\threshold.txt
+
+--- Detailed Evaluation on Development Set ---
+
+Metrics for language: DE
+  Precision-de (Pos): 0.6216
+  Recall-de    (Pos): 0.6571
+  F1-de        (Pos): 0.6389
+  Accuracy-de:        0.9590
+
+Metrics for language: EN
+  Precision-en (Pos): 0.6220
+  Recall-en    (Pos): 0.8361
+  F1-en        (Pos): 0.7133
+  Accuracy-en:        0.9545
+
+Metrics for language: FR
+  Precision-fr (Pos): 0.5750
+  Recall-fr    (Pos): 0.7667
+  F1-fr        (Pos): 0.6571
+  Accuracy-fr:        0.9427
+
+Metrics for language: RU
+  Precision-ru (Pos): 0.5976
+  Recall-ru    (Pos): 0.7206
+  F1-ru        (Pos): 0.6533
+  Accuracy-ru:        0.9221
+
+--- Overall Evaluation Summary (Positive Class Focus) ---
+F1-score across all languages (Positive Class): 0.6621  <-- Primary Metric
+Macro F1-score across all languages (Pos Class):0.6657
+Overall Precision (Positive Class):             0.6016
+Overall Recall (Positive Class):                0.7362
+Overall Accuracy across all languages:          0.9354
+
+Overall Confusion Matrix (All Languages):
+[[TN=4033  FP=194]
+ [FN=105  TP=293]]
+Metrics logged to WandB.
+
+Saving predictions for submission...
+Predictions saved to results_deberta-v3-large\predictions_task1.csv
+predictions_task1.csv has been zipped into results_deberta-v3-large\submission_task1.zip
+
+Script finished.
+Wandb non initialisé - pas de clé API
+Loading data...
+Data loaded.
+Loading tokenizer...
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels', 'input_ids', 'token_type_ids', 'attention_mask']
+Loading base model...
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Dropout increased: hidden_dropout=0.3, attention_dropout=0.3
+
+--- Adaptation linguistique pour DE ---
+Adaptation sur 1482 exemples en de
+Distribution des classes: {0: 1399, 1: 83}
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_21464\3919135767.py:116: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_21464\4048649861.py:116: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_21464\466406772.py:117: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(
+c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\convert_slow_tokenizer.py:559: UserWarning: The sentencepiece tokenizer that you are converting to a fast tokenizer uses the byte fallback option which is not implemented in the fast tokenizers. In practice this means that the fast version of the tokenizer can produce unknown tokens whereas the sentencepiece version would have converted these unknown tokens into a sequence of byte tokens matching the original piece of text.
+  warnings.warn(
+Some weights of DebertaV2ForSequenceClassification were not initialized from the model checkpoint at microsoft/mdeberta-v3-base and are newly initialized: ['classifier.bias', 'classifier.weight', 'pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_21464\1294779273.py:121: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedTrainer.__init__`. Use `processing_class` instead.
+  trainer = WeightedTrainer(

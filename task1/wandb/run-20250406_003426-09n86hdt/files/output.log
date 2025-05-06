@@ -1,0 +1,346 @@
+Loading data...
+Loaded 31187 train and 4625 dev examples.
+Data loaded.
+Tokenizing data...
+Using 6 processes for tokenization...
+Tokenization complete.
+Loading tokenizer 'xlm-roberta-large' for the Trainer...
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels']
+Computing class weights...
+Detected 2 distinct labels in training data: [0 1]
+Class Weights (for classes [0, 1]): [0.5426468 6.3620973]
+Setting up QLoRA configuration...
+Loading large model 'xlm-roberta-large' with 4-bit quantization...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Large model loaded.
+Model prepared for k-bit training.
+Setting up LoRA configuration for XLM-R...
+Applying LoRA adapter...
+Error applying LoRA adapter: Target modules {'q_proj', 'v_proj'} not found in the base model. Please check the target modules and try again.
+Loading data...
+Loaded 31187 train and 4625 dev examples.
+Data loaded.
+Tokenizing data...
+Using 6 processes for tokenization...
+Tokenization complete.
+Loading tokenizer 'xlm-roberta-large' for the Trainer...
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels']
+Computing class weights...
+Detected 2 distinct labels in training data: [0 1]
+Class Weights (for classes [0, 1]): [0.5426468 6.3620973]
+Setting up QLoRA configuration...
+Loading large model 'xlm-roberta-large' with 4-bit quantization...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Large model loaded.
+Model prepared for k-bit training.
+Setting up LoRA configuration for XLM-R...
+Applying LoRA adapter...
+Error applying LoRA adapter: only Tensors of floating point dtype can require gradients
+Loading data...
+Loaded 31187 train and 4625 dev examples.
+Data loaded.
+Tokenizing data...
+Using 6 processes for tokenization...
+Tokenization complete.
+Loading tokenizer 'xlm-roberta-large' for the Trainer...
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels']
+Computing class weights...
+Detected 2 distinct labels in training data: [0 1]
+Class Weights (for classes [0, 1]): [0.5426468 6.3620973]
+Setting up QLoRA configuration...
+Loading large model 'xlm-roberta-large' with 4-bit quantization...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Large model loaded.
+Model prepared for k-bit training.
+Setting up LoRA configuration for XLM-R...
+Applying LoRA adapter...
+Error applying LoRA adapter: only Tensors of floating point dtype can require gradients
+Loading data...
+Loaded 31187 train and 4625 dev examples.
+Data loaded.
+Tokenizing data...
+Using 6 processes for tokenization...
+Tokenization complete.
+Loading tokenizer 'xlm-roberta-large' for the Trainer...
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels']
+Computing class weights...
+Detected 2 distinct labels in training data: [0 1]
+Class Weights (for classes [0, 1]): [0.5426468 6.3620973]
+Setting up QLoRA configuration...
+Loading large model 'xlm-roberta-large' with 4-bit quantization...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Large model loaded.
+Model prepared for k-bit training.
+Setting up LoRA configuration for XLM-R...
+Applying LoRA adapter...
+Error applying LoRA adapter: only Tensors of floating point dtype can require gradients
+Loading data...
+Loaded 31187 train and 4625 dev examples.
+Data loaded.
+Tokenizing data...
+Using 6 processes for tokenization...
+Tokenization complete.
+Loading tokenizer 'xlm-roberta-large' for the Trainer...
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels']
+Computing class weights...
+Detected 2 distinct labels in training data: [0 1]
+Class Weights (for classes [0, 1]): [0.5426468 6.3620973]
+Setting up QLoRA configuration...
+Loading large model 'xlm-roberta-large' with 4-bit quantization...
+Initializing model with num_labels=2
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Large model loaded.
+Preparing model for k-bit training...
+Model prepared for k-bit training.
+Setting up LoRA configuration for XLM-R...
+Applying LoRA adapter...
+Error applying LoRA adapter: only Tensors of floating point dtype can require gradients
+
+Model structure:
+XLMRobertaForSequenceClassification(
+  (roberta): XLMRobertaModel(
+    (embeddings): XLMRobertaEmbeddings(
+      (word_embeddings): Embedding(250002, 1024, padding_idx=1)
+      (position_embeddings): Embedding(514, 1024, padding_idx=1)
+      (token_type_embeddings): Embedding(1, 1024)
+      (LayerNorm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (encoder): XLMRobertaEncoder(
+      (layer): ModuleList(
+        (0-23): 24 x XLMRobertaLayer(
+          (attention): XLMRobertaAttention(
+            (self): XLMRobertaSdpaSelfAttention(
+              (query): lora.Linear4bit(
+                (base_layer): Linear4bit(in_features=1024, out_features=1024, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=1024, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (key): Linear4bit(in_features=1024, out_features=1024, bias=True)
+              (value): lora.Linear4bit(
+                (base_layer): Linear4bit(in_features=1024, out_features=1024, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=1024, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): XLMRobertaSelfOutput(
+              (dense): Linear4bit(in_features=1024, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (intermediate): XLMRobertaIntermediate(
+            (dense): Linear4bit(in_features=1024, out_features=4096, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): XLMRobertaOutput(
+            (dense): Linear4bit(in_features=4096, out_features=1024, bias=True)
+            (LayerNorm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+  )
+  (classifier): ModulesToSaveWrapper(
+    (original_module): XLMRobertaClassificationHead(
+      (dense): Linear4bit(in_features=1024, out_features=1024, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=1024, out_features=2, bias=True)
+    )
+    (modules_to_save): ModuleDict(
+      (default): XLMRobertaClassificationHead(
+        (dense): Linear4bit(in_features=1024, out_features=1024, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (out_proj): Linear(in_features=1024, out_features=2, bias=True)
+      )
+    )
+  )
+)
+Loading data...
+Loaded 31187 train and 4625 dev examples.
+Data loaded.
+Tokenizing data...
+Using 6 processes for tokenization...
+Tokenization complete.
+Loading main tokenizer 'xlm-roberta-large' for the Trainer...
+Cleaning dataset columns...
+Columns after cleaning and rename: ['labels']
+Computing class weights and determining label info...
+Detected 2 distinct labels in training data: [0 1]
+Model will be configured with num_labels=2
+Class Weights (for classes [0, 1]): [0.5426468 6.3620973]
+
+Setting up QLoRA configuration...
+Loading large model 'xlm-roberta-large' with 4-bit quantization...
+Initializing model with num_labels=2
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-large and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Large model loaded.
+Preparing model for k-bit training...
+Model prepared for k-bit training.
+
+Inspecting classifier module parameters BEFORE manual casting:
+  Parameter: dense.weight                   | dtype: torch.uint8 | device: cuda:0 | requires_grad: False
+  Parameter: dense.bias                     | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: out_proj.weight                | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: out_proj.bias                  | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+
+Manually casting classifier to float32...
+Classifier casting attempted.
+
+Inspecting classifier module parameters AFTER manual casting:
+  Parameter: dense.weight                   | dtype: torch.uint8 | device: cuda:0 | requires_grad: False
+  Parameter: dense.bias                     | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: out_proj.weight                | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: out_proj.bias                  | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+WARNING: Parameter out_proj.bias is NOT float after casting (torch.uint8). This might cause PEFT error.
+
+Setting up LoRA configuration for XLM-R...
+
+Applying LoRA adapter...
+Error applying LoRA adapter: only Tensors of floating point dtype can require gradients
+
+Model structure at time of PEFT error:
+XLMRobertaForSequenceClassification(
+  (roberta): XLMRobertaModel(
+    (embeddings): XLMRobertaEmbeddings(
+      (word_embeddings): Embedding(250002, 1024, padding_idx=1)
+      (position_embeddings): Embedding(514, 1024, padding_idx=1)
+      (token_type_embeddings): Embedding(1, 1024)
+      (LayerNorm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+    (encoder): XLMRobertaEncoder(
+      (layer): ModuleList(
+        (0-23): 24 x XLMRobertaLayer(
+          (attention): XLMRobertaAttention(
+            (self): XLMRobertaSdpaSelfAttention(
+              (query): lora.Linear4bit(
+                (base_layer): Linear4bit(in_features=1024, out_features=1024, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=1024, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (key): Linear4bit(in_features=1024, out_features=1024, bias=True)
+              (value): lora.Linear4bit(
+                (base_layer): Linear4bit(in_features=1024, out_features=1024, bias=True)
+                (lora_dropout): ModuleDict(
+                  (default): Dropout(p=0.05, inplace=False)
+                )
+                (lora_A): ModuleDict(
+                  (default): Linear(in_features=1024, out_features=16, bias=False)
+                )
+                (lora_B): ModuleDict(
+                  (default): Linear(in_features=16, out_features=1024, bias=False)
+                )
+                (lora_embedding_A): ParameterDict()
+                (lora_embedding_B): ParameterDict()
+                (lora_magnitude_vector): ModuleDict()
+              )
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+            (output): XLMRobertaSelfOutput(
+              (dense): Linear4bit(in_features=1024, out_features=1024, bias=True)
+              (LayerNorm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+              (dropout): Dropout(p=0.1, inplace=False)
+            )
+          )
+          (intermediate): XLMRobertaIntermediate(
+            (dense): Linear4bit(in_features=1024, out_features=4096, bias=True)
+            (intermediate_act_fn): GELUActivation()
+          )
+          (output): XLMRobertaOutput(
+            (dense): Linear4bit(in_features=4096, out_features=1024, bias=True)
+            (LayerNorm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+  )
+  (classifier): ModulesToSaveWrapper(
+    (original_module): XLMRobertaClassificationHead(
+      (dense): Linear4bit(in_features=1024, out_features=1024, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (out_proj): Linear(in_features=1024, out_features=2, bias=True)
+    )
+    (modules_to_save): ModuleDict(
+      (default): XLMRobertaClassificationHead(
+        (dense): Linear4bit(in_features=1024, out_features=1024, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (out_proj): Linear(in_features=1024, out_features=2, bias=True)
+      )
+    )
+  )
+)
+
+Parameter dtypes in classifier at time of PEFT error:
+  Parameter: original_module.dense.weight   | dtype: torch.uint8 | device: cuda:0 | requires_grad: False
+  Parameter: original_module.dense.bias     | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: original_module.out_proj.weight | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: original_module.out_proj.bias  | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: modules_to_save.default.dense.weight | dtype: torch.uint8 | device: cuda:0 | requires_grad: False
+  Parameter: modules_to_save.default.dense.bias | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: modules_to_save.default.out_proj.weight | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+  Parameter: modules_to_save.default.out_proj.bias | dtype: torch.float32 | device: cuda:0 | requires_grad: False
+Traceback (most recent call last):
+  File "C:\Users\Olivier\AppData\Local\Temp\ipykernel_12976\2934438789.py", line 281, in <module>
+    model = get_peft_model(model, lora_config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\peft\mapping_func.py", line 123, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\peft\peft_model.py", line 1486, in __init__
+    super().__init__(model, peft_config, adapter_name, **kwargs)
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\peft\peft_model.py", line 134, in __init__
+    self.set_additional_trainable_modules(peft_config, adapter_name)
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\peft\peft_model.py", line 956, in set_additional_trainable_modules
+    _set_trainable(self, adapter_name, module_names=peft_config.modules_to_save)
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\peft\utils\other.py", line 763, in _set_trainable
+    target.set_adapter(target.active_adapter)
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\peft\utils\other.py", line 550, in set_adapter
+    self.modules_to_save[adapter_name].requires_grad_(True)
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 2884, in requires_grad_
+    p.requires_grad_(requires_grad)
+RuntimeError: only Tensors of floating point dtype can require gradients

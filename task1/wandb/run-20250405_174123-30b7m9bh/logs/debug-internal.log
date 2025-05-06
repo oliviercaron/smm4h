@@ -1,0 +1,24 @@
+{"time":"2025-04-05T17:41:23.8184048+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250405_174123-30b7m9bh\\logs\\debug-core.log"}
+{"time":"2025-04-05T17:41:23.9270765+02:00","level":"INFO","msg":"created new stream","id":"30b7m9bh"}
+{"time":"2025-04-05T17:41:23.9270765+02:00","level":"INFO","msg":"stream: started","id":"30b7m9bh"}
+{"time":"2025-04-05T17:41:23.9270765+02:00","level":"INFO","msg":"handler: started","stream_id":"30b7m9bh"}
+{"time":"2025-04-05T17:41:23.9270765+02:00","level":"INFO","msg":"sender: started","stream_id":"30b7m9bh"}
+{"time":"2025-04-05T17:41:23.9270765+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"30b7m9bh"}
+{"time":"2025-04-05T17:41:24.1473976+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-05T17:41:29.1523788+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-05T17:42:39.896858+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-05T17:42:54.1580499+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-05T17:42:54.6394377+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-05T17:46:31.3692266+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-05T17:46:39.1543985+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-05T17:46:52.1911785+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-05T17:49:12.4210223+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-05T17:49:23.1751174+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-05T17:49:23.2255632+02:00","level":"INFO","msg":"stream: closing","id":"30b7m9bh"}
+{"time":"2025-04-05T17:49:23.2255632+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-05T17:49:23.226089+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-05T17:49:24.2245761+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-05T17:49:24.395677+02:00","level":"INFO","msg":"handler: closed","stream_id":"30b7m9bh"}
+{"time":"2025-04-05T17:49:24.395677+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"30b7m9bh"}
+{"time":"2025-04-05T17:49:24.395677+02:00","level":"INFO","msg":"sender: closed","stream_id":"30b7m9bh"}
+{"time":"2025-04-05T17:49:24.395677+02:00","level":"INFO","msg":"stream: closed","id":"30b7m9bh"}

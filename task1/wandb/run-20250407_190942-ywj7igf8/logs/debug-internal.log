@@ -1,0 +1,134 @@
+{"time":"2025-04-07T19:09:42.6111475+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250407_190942-ywj7igf8\\logs\\debug-core.log"}
+{"time":"2025-04-07T19:09:42.7201804+02:00","level":"INFO","msg":"created new stream","id":"ywj7igf8"}
+{"time":"2025-04-07T19:09:42.7201804+02:00","level":"INFO","msg":"stream: started","id":"ywj7igf8"}
+{"time":"2025-04-07T19:09:42.7201804+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ywj7igf8"}
+{"time":"2025-04-07T19:09:42.7201804+02:00","level":"INFO","msg":"handler: started","stream_id":"ywj7igf8"}
+{"time":"2025-04-07T19:09:42.7201804+02:00","level":"INFO","msg":"sender: started","stream_id":"ywj7igf8"}
+{"time":"2025-04-07T19:09:42.9270117+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-07T19:09:57.9353569+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:10:12.9359772+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:10:27.9348337+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:10:42.933785+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:10:57.9348307+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:11:12.9355803+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:11:27.9348463+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:11:42.9332034+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:11:57.9351919+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:12:12.9355465+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:12:27.9386522+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:12:42.9339035+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:12:57.9338404+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:13:12.9340175+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:13:27.9376544+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:13:42.9333096+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:13:57.9317508+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:14:12.9343167+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:14:27.9329889+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:14:42.9336351+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:14:57.9324979+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:15:12.9334571+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:15:27.9326141+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:15:42.9319566+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:15:57.9322615+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:16:12.9318652+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:16:27.9359897+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:16:42.932311+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:16:57.9320384+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:17:12.9325093+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:17:27.932186+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:17:42.9323651+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:17:57.9324672+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:18:12.9326428+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:18:27.93246+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:18:42.9315938+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:18:57.9324259+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:19:12.9315191+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:19:27.9308616+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:19:42.9312045+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:19:57.9306565+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:20:12.930903+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:20:27.9352302+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:20:42.9311002+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:20:57.9306398+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:21:12.9306615+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:21:27.9332725+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:21:42.9316102+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:21:57.9296418+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:22:12.9317749+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:22:27.9293422+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:22:42.9302264+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:22:57.9303444+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:23:12.9317642+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:23:27.9304278+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:23:42.9292153+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:23:57.9291997+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:24:12.9286839+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:24:27.9291173+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:24:42.9286504+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:24:57.9290117+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:25:12.9279705+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:25:27.9290286+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:25:42.9293688+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:25:57.9289304+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:26:12.9283969+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:26:27.929826+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:26:42.9284197+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:26:57.9289986+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:27:12.9291277+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:27:27.9322939+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:27:42.9279311+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:27:57.9281636+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:28:12.9281809+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:28:27.9292168+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:28:42.9286809+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:28:57.9280822+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:29:12.9282896+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:29:27.927026+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:29:42.9281915+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:29:57.9271915+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:30:12.9278316+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:30:27.9266944+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:30:42.9294313+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:30:57.9271795+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:31:12.9289424+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:31:27.9268829+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:31:42.9276868+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:31:57.9272467+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:32:12.9272135+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:32:27.9266574+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:32:42.9265416+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:32:57.926822+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:33:12.9264919+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:33:27.9285041+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:33:42.9254728+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:33:57.9266874+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:34:12.925879+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:34:27.9249154+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:34:42.9256696+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:34:57.9260618+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:35:12.9253615+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:35:27.9301632+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:35:42.924576+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:35:57.9323947+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-07T19:35:58.616589+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-07T22:06:16.921989+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-07T22:16:42.0694124+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T00:12:52.5859201+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T00:12:52.6243857+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T00:39:02.6196947+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T00:39:02.6445189+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T00:39:06.7976774+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T00:39:06.8012795+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T00:39:48.3866431+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T00:39:48.4020997+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T00:39:50.2842474+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T00:39:50.2895912+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T00:42:32.039171+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T00:42:32.0979748+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:02:30.1563265+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:02:32.098407+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:04:10.6189234+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:04:11.9485056+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:06:23.376332+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-08T01:06:26.7419137+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-08T01:06:47.7459599+02:00","level":"INFO","msg":"Resuming system monitor"}

@@ -1,0 +1,46 @@
+
+An error occurred during training: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['labels']
+--------------------- TRACEBACK ---------------------
+Traceback (most recent call last):
+  File "C:\Users\Olivier\AppData\Local\Temp\ipykernel_24720\1542186833.py", line 347, in <module>
+    train_result = trainer.train()
+                   ^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\trainer.py", line 2245, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\trainer.py", line 2514, in _inner_training_loop
+    batch_samples, num_items_in_batch = self.get_batch_samples(epoch_iterator, num_batches, args.device)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\trainer.py", line 5243, in get_batch_samples
+    batch_samples.append(next(epoch_iterator))
+                         ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\accelerate\data_loader.py", line 566, in __iter__
+    current_batch = next(dataloader_iter)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 708, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 764, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 55, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\data\data_collator.py", line 272, in __call__
+    batch = pad_without_fast_tokenizer_warning(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\data\data_collator.py", line 67, in pad_without_fast_tokenizer_warning
+    padded = tokenizer.pad(*pad_args, **pad_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Olivier\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\tokenization_utils_base.py", line 3324, in pad
+    raise ValueError(
+ValueError: You should supply an encoding or a list of encodings to this method that includes input_ids, but you provided ['labels']
+---------------------------------------------------
+
+Skipping evaluation because training did not complete successfully.
+
+Skipping detailed evaluation because training did not complete successfully.
+
+Saving final predictions for submission...
+
+Cleaning up resources...

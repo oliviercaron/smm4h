@@ -1,0 +1,15 @@
+{"time":"2025-04-09T09:55:02.4816223+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250409_095502-pe9oxy64\\logs\\debug-core.log"}
+{"time":"2025-04-09T09:55:02.5910186+02:00","level":"INFO","msg":"created new stream","id":"pe9oxy64"}
+{"time":"2025-04-09T09:55:02.5910186+02:00","level":"INFO","msg":"stream: started","id":"pe9oxy64"}
+{"time":"2025-04-09T09:55:02.5910186+02:00","level":"INFO","msg":"handler: started","stream_id":"pe9oxy64"}
+{"time":"2025-04-09T09:55:02.5910186+02:00","level":"INFO","msg":"sender: started","stream_id":"pe9oxy64"}
+{"time":"2025-04-09T09:55:02.5910186+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"pe9oxy64"}
+{"time":"2025-04-09T09:55:02.8375587+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-09T09:55:17.8476073+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:55:32.8520972+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:55:47.8456397+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:56:02.8466949+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:56:17.8459548+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:56:32.8455139+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:56:47.8478948+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-09T09:57:02.8454516+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}

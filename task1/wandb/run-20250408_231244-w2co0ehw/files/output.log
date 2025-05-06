@@ -1,0 +1,125 @@
+Training finished for Fold 1.
+Evaluating Fold 1 on its validation set (OOF)...
+Fold 1 OOF Evaluation Metrics: {'eval_loss': 0.838941752910614, 'eval_accuracy': 0.9455535390199638, 'eval_f1_pos': 0.6517857142857143, 'eval_precision_pos': 0.6636363636363637, 'eval_recall_pos': 0.6403508771929824, 'eval_f1_neg': 0.9704679691049523, 'eval_runtime': 30.2816, 'eval_samples_per_second': 236.547, 'eval_steps_per_second': 29.589, 'epoch': 7.999581181069384}
+Generating OOF predictions for Fold 1...
+Warning: Test file data/test_data_SMM4H_2025_Task_1.csv not found. Skipping test predictions.
+
+===== Fold 2/5 =====
+Training fold size: 28649
+Validation fold size: 7163
+Calculating class weights for the training fold...
+Class Weights computed for Fold 2: [0.5432119965553284, 6.2854323387146]
+Train fold class counts: Neg=26370, Pos=2279 (Ratio ~11.6:1)
+Weights will be applied in loss calculation.
+Tokenizing fold data...
+Tokenization and format setting complete for fold.
+Loading model xlm-roberta-base for Fold 2...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Gradient Checkpointing Enabled.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_19056\3036366366.py:86: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedOrStandardTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args, **kwargs)
+Trainer initialized to use class weights: [0.5432119965553284, 6.2854323387146]
+Starting Training for Fold 2...
+Training finished for Fold 2.
+Evaluating Fold 2 on its validation set (OOF)...
+Fold 2 OOF Evaluation Metrics: {'eval_loss': 0.6669125556945801, 'eval_accuracy': 0.9505793661873516, 'eval_f1_pos': 0.6844919786096256, 'eval_precision_pos': 0.6956521739130435, 'eval_recall_pos': 0.6736842105263158, 'eval_f1_neg': 0.9731899424416843, 'eval_runtime': 29.6228, 'eval_samples_per_second': 241.807, 'eval_steps_per_second': 30.247, 'epoch': 7.999581181069384}
+Generating OOF predictions for Fold 2...
+
+===== Fold 3/5 =====
+Training fold size: 28650
+Validation fold size: 7162
+Calculating class weights for the training fold...
+Class Weights computed for Fold 3: [0.5432103276252747, 6.285651683807373]
+Train fold class counts: Neg=26371, Pos=2279 (Ratio ~11.6:1)
+Weights will be applied in loss calculation.
+Tokenizing fold data...
+Tokenization and format setting complete for fold.
+Loading model xlm-roberta-base for Fold 3...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Gradient Checkpointing Enabled.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_19056\3036366366.py:86: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedOrStandardTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args, **kwargs)
+Trainer initialized to use class weights: [0.5432103276252747, 6.285651683807373]
+Starting Training for Fold 3...
+Training finished for Fold 3.
+Evaluating Fold 3 on its validation set (OOF)...
+Fold 3 OOF Evaluation Metrics: {'eval_loss': 0.8835861682891846, 'eval_accuracy': 0.9507120915945266, 'eval_f1_pos': 0.686779059449867, 'eval_precision_pos': 0.6947935368043088, 'eval_recall_pos': 0.6789473684210526, 'eval_f1_neg': 0.9732514965522467, 'eval_runtime': 29.581, 'eval_samples_per_second': 242.115, 'eval_steps_per_second': 30.29, 'epoch': 7.999581181069384}
+Generating OOF predictions for Fold 3...
+
+===== Fold 4/5 =====
+Training fold size: 28650
+Validation fold size: 7162
+Calculating class weights for the training fold...
+Class Weights computed for Fold 4: [0.5432103276252747, 6.285651683807373]
+Train fold class counts: Neg=26371, Pos=2279 (Ratio ~11.6:1)
+Weights will be applied in loss calculation.
+Tokenizing fold data...
+Tokenization and format setting complete for fold.
+Loading model xlm-roberta-base for Fold 4...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Gradient Checkpointing Enabled.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_19056\3036366366.py:86: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedOrStandardTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args, **kwargs)
+Trainer initialized to use class weights: [0.5432103276252747, 6.285651683807373]
+Starting Training for Fold 4...
+Training finished for Fold 4.
+Evaluating Fold 4 on its validation set (OOF)...
+Fold 4 OOF Evaluation Metrics: {'eval_loss': 0.9421279430389404, 'eval_accuracy': 0.9468025691147725, 'eval_f1_pos': 0.66431718061674, 'eval_precision_pos': 0.6672566371681415, 'eval_recall_pos': 0.6614035087719298, 'eval_f1_neg': 0.9711122905451512, 'eval_runtime': 29.4681, 'eval_samples_per_second': 243.043, 'eval_steps_per_second': 30.406, 'epoch': 7.999581181069384}
+Generating OOF predictions for Fold 4...
+
+===== Fold 5/5 =====
+Training fold size: 28650
+Validation fold size: 7162
+Calculating class weights for the training fold...
+Class Weights computed for Fold 5: [0.5432309508323669, 6.282894611358643]
+Train fold class counts: Neg=26370, Pos=2280 (Ratio ~11.6:1)
+Weights will be applied in loss calculation.
+Tokenizing fold data...
+Tokenization and format setting complete for fold.
+Loading model xlm-roberta-base for Fold 5...
+Some weights of XLMRobertaForSequenceClassification were not initialized from the model checkpoint at xlm-roberta-base and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Gradient Checkpointing Enabled.
+C:\Users\Olivier\AppData\Local\Temp\ipykernel_19056\3036366366.py:86: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `WeightedOrStandardTrainer.__init__`. Use `processing_class` instead.
+  super().__init__(*args, **kwargs)
+Trainer initialized to use class weights: [0.5432309508323669, 6.282894611358643]
+Starting Training for Fold 5...
+Training finished for Fold 5.
+Evaluating Fold 5 on its validation set (OOF)...
+Fold 5 OOF Evaluation Metrics: {'eval_loss': 0.7389336824417114, 'eval_accuracy': 0.9512705948059201, 'eval_f1_pos': 0.700942587832048, 'eval_precision_pos': 0.6839464882943144, 'eval_recall_pos': 0.718804920913884, 'eval_f1_neg': 0.9734741962453447, 'eval_runtime': 29.6777, 'eval_samples_per_second': 241.326, 'eval_steps_per_second': 30.191, 'epoch': 7.999581181069384}
+Generating OOF predictions for Fold 5...
+
+===== Cross-Validation Summary =====
+Average OOF Metrics across folds:
+  avg_eval_loss: 0.8141
+  avg_eval_accuracy: 0.9490
+  avg_eval_f1_pos: 0.6777
+  avg_eval_precision_pos: 0.6811
+  avg_eval_recall_pos: 0.6746
+  avg_eval_f1_neg: 0.9723
+  avg_eval_runtime: 29.7262
+  avg_eval_samples_per_second: 240.9676
+  avg_eval_steps_per_second: 30.1446
+  avg_epoch: 7.9996
+
+Running threshold tuning on aggregated OOF predictions...
+Best threshold found on OOF predictions: 0.6300 -> Tuned OOF F1: 0.6783
+Best OOF threshold saved to cv_xlm-roberta-base_classweights_tuned\best_oof_threshold.txt
+
+Calculating final OOF metrics using the best threshold...
+Final Aggregated OOF Metrics (Positive Class Focus):
+  F1 (Positive):      0.6783
+  Precision (Positive): 0.6871
+  Recall (Positive):    0.6697
+  Accuracy:           0.9495
+
+Final OOF Confusion Matrix:
+[[TN=32094  FP=869]
+ [FN=941  TP=1908]]
+
+Skipping final submission generation: Test data not found or processed.
+
+Script finished.

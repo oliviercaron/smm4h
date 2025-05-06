@@ -1,0 +1,14 @@
+
+==================================================
+          PHASE 1: DÉMARRAGE ENTRAÎNEMENT MSIMCSE
+==================================================
+
+Chargement du dataset NLI: multi_nli (split: train)
+Repo card metadata block was not found. Setting CardData to empty.
+Erreur lors du chargement du dataset NLI: [WinError 183] Impossible de créer un fichier déjà existant: 'C:\\Users\\Olivier\\.cache\\huggingface\\datasets'
+Tentative de chargement depuis une source alternative...
+Échec du chargement alternatif: [WinError 183] Impossible de créer un fichier déjà existant: 'C:\\Users\\Olivier\\.cache\\huggingface\\datasets'
+Chargement du modèle de base: xlm-roberta-large
+No sentence-transformers model found with name xlm-roberta-large. Creating a new one with mean pooling.
+Modèle de base chargé.
+Préparation des données NLI pour l'entraînement contrastif...

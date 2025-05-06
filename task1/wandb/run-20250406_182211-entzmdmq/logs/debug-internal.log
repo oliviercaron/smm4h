@@ -1,0 +1,14 @@
+{"time":"2025-04-06T18:22:11.4965771+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250406_182211-entzmdmq\\logs\\debug-core.log"}
+{"time":"2025-04-06T18:22:11.604758+02:00","level":"INFO","msg":"created new stream","id":"entzmdmq"}
+{"time":"2025-04-06T18:22:11.604758+02:00","level":"INFO","msg":"stream: started","id":"entzmdmq"}
+{"time":"2025-04-06T18:22:11.604758+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"entzmdmq"}
+{"time":"2025-04-06T18:22:11.604758+02:00","level":"INFO","msg":"handler: started","stream_id":"entzmdmq"}
+{"time":"2025-04-06T18:22:11.604758+02:00","level":"INFO","msg":"sender: started","stream_id":"entzmdmq"}
+{"time":"2025-04-06T18:22:11.82391+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-06T18:22:26.8328845+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T18:22:41.8331298+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T18:22:56.8330473+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T18:23:11.8334391+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T18:23:26.8314418+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T18:23:41.8324722+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T18:23:44.2901615+02:00","level":"INFO","msg":"Pausing system monitor"}

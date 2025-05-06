@@ -1,0 +1,20 @@
+{"time":"2025-04-04T00:05:39.2891357+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250404_000537-ch8o2kph\\logs\\debug-core.log"}
+{"time":"2025-04-04T00:05:39.4007078+02:00","level":"INFO","msg":"created new stream","id":"ch8o2kph"}
+{"time":"2025-04-04T00:05:39.4007078+02:00","level":"INFO","msg":"stream: started","id":"ch8o2kph"}
+{"time":"2025-04-04T00:05:39.4007078+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"ch8o2kph"}
+{"time":"2025-04-04T00:05:39.4007078+02:00","level":"INFO","msg":"handler: started","stream_id":"ch8o2kph"}
+{"time":"2025-04-04T00:05:39.4007078+02:00","level":"INFO","msg":"sender: started","stream_id":"ch8o2kph"}
+{"time":"2025-04-04T00:05:40.5538612+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-04T00:05:55.5656482+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-04T00:06:10.5633759+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-04T00:06:25.5644519+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-04T00:06:40.5642998+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-04T00:06:50.3198866+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-04T00:06:50.3208883+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-04T00:06:51.3242217+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.7074221,"progress":"1.2KB/1.2KB"}],"total_operations":1}}
+{"time":"2025-04-04T00:06:51.4192328+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-04T00:06:51.5853787+02:00","level":"INFO","msg":"stream: closing","id":"ch8o2kph"}
+{"time":"2025-04-04T00:06:51.5853787+02:00","level":"INFO","msg":"handler: closed","stream_id":"ch8o2kph"}
+{"time":"2025-04-04T00:06:51.5853787+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ch8o2kph"}
+{"time":"2025-04-04T00:06:51.5853787+02:00","level":"INFO","msg":"sender: closed","stream_id":"ch8o2kph"}
+{"time":"2025-04-04T00:06:51.5853787+02:00","level":"INFO","msg":"stream: closed","id":"ch8o2kph"}

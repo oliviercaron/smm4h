@@ -1,0 +1,18 @@
+{"time":"2025-04-06T00:52:22.9130461+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250406_005222-6mmdbtfh\\logs\\debug-core.log"}
+{"time":"2025-04-06T00:52:23.0207485+02:00","level":"INFO","msg":"created new stream","id":"6mmdbtfh"}
+{"time":"2025-04-06T00:52:23.0207485+02:00","level":"INFO","msg":"stream: started","id":"6mmdbtfh"}
+{"time":"2025-04-06T00:52:23.0207485+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"6mmdbtfh"}
+{"time":"2025-04-06T00:52:23.0207485+02:00","level":"INFO","msg":"sender: started","stream_id":"6mmdbtfh"}
+{"time":"2025-04-06T00:52:23.0207485+02:00","level":"INFO","msg":"handler: started","stream_id":"6mmdbtfh"}
+{"time":"2025-04-06T00:52:38.8267871+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-06T00:52:53.8358309+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T00:53:08.8356291+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T00:53:17.177802+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-06T00:53:17.1783334+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-06T00:53:18.1122267+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-06T00:53:18.1823249+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 51-111","runtime_seconds":0.0700982}],"total_operations":1}}
+{"time":"2025-04-06T00:53:18.4701628+02:00","level":"INFO","msg":"stream: closing","id":"6mmdbtfh"}
+{"time":"2025-04-06T00:53:18.4701628+02:00","level":"INFO","msg":"handler: closed","stream_id":"6mmdbtfh"}
+{"time":"2025-04-06T00:53:18.4701628+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"6mmdbtfh"}
+{"time":"2025-04-06T00:53:18.4701628+02:00","level":"INFO","msg":"sender: closed","stream_id":"6mmdbtfh"}
+{"time":"2025-04-06T00:53:18.4701628+02:00","level":"INFO","msg":"stream: closed","id":"6mmdbtfh"}

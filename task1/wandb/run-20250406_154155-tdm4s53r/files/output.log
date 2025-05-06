@@ -1,0 +1,14 @@
+
+==================================================
+          PHASE 1: DÉMARRAGE ENTRAÎNEMENT MSIMCSE
+==================================================
+
+Chargement du dataset NLI: multi_nli (split: train)
+Repo card metadata block was not found. Setting CardData to empty.
+Dataset NLI chargé avec 392702 exemples.
+Chargement du modèle de base: xlm-roberta-large
+No sentence-transformers model found with name xlm-roberta-large. Creating a new one with mean pooling.
+Modèle de base chargé.
+Préparation des données NLI pour l'entraînement contrastif...
+Erreur: Aucune paire positive (entailment) trouvée dans le dataset NLI.
+0 paires positives (entailment) créées.

@@ -1,0 +1,7 @@
+Created SimCSE dataset with 35812 examples.
+Loading tokenizer xlm-roberta-base for SimCSE phase...
+--- Initial Data Loading and Cleaning ---
+Loaded 31187 train and 4625 dev examples.
+Text cleaning complete.
+
+--- Phase 1: Starting SimCSE Pre-training ---

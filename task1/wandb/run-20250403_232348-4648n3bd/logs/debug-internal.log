@@ -1,0 +1,26 @@
+{"time":"2025-04-03T23:23:49.6636351+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250403_232348-4648n3bd\\logs\\debug-core.log"}
+{"time":"2025-04-03T23:23:49.7713629+02:00","level":"INFO","msg":"created new stream","id":"4648n3bd"}
+{"time":"2025-04-03T23:23:49.7713629+02:00","level":"INFO","msg":"stream: started","id":"4648n3bd"}
+{"time":"2025-04-03T23:23:49.7713629+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"4648n3bd"}
+{"time":"2025-04-03T23:23:49.7713629+02:00","level":"INFO","msg":"handler: started","stream_id":"4648n3bd"}
+{"time":"2025-04-03T23:23:49.7713629+02:00","level":"INFO","msg":"sender: started","stream_id":"4648n3bd"}
+{"time":"2025-04-03T23:23:50.6384449+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-03T23:24:05.6505176+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:24:20.6502286+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:24:35.64834+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:24:50.6523065+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:25:05.6505569+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:25:20.6484519+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:25:35.6523535+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:25:50.649813+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:26:05.6488895+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:26:20.6513218+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-03T23:26:25.2025441+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-03T23:26:25.2025441+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-03T23:26:26.2066717+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6831027,"progress":"525B/525B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6831027,"progress":"26B/26B"},{"desc":"uploading config.yaml","runtime_seconds":0.5371785,"progress":"8.4KB/8.4KB"}],"total_operations":3}}
+{"time":"2025-04-03T23:26:26.3021846+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-03T23:26:26.4944185+02:00","level":"INFO","msg":"stream: closing","id":"4648n3bd"}
+{"time":"2025-04-03T23:26:26.4944185+02:00","level":"INFO","msg":"handler: closed","stream_id":"4648n3bd"}
+{"time":"2025-04-03T23:26:26.4944185+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4648n3bd"}
+{"time":"2025-04-03T23:26:26.4944185+02:00","level":"INFO","msg":"sender: closed","stream_id":"4648n3bd"}
+{"time":"2025-04-03T23:26:26.4944185+02:00","level":"INFO","msg":"stream: closed","id":"4648n3bd"}

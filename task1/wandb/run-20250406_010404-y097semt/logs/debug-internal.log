@@ -1,0 +1,19 @@
+{"time":"2025-04-06T01:04:04.3841432+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250406_010404-y097semt\\logs\\debug-core.log"}
+{"time":"2025-04-06T01:04:04.4919369+02:00","level":"INFO","msg":"created new stream","id":"y097semt"}
+{"time":"2025-04-06T01:04:04.4919369+02:00","level":"INFO","msg":"stream: started","id":"y097semt"}
+{"time":"2025-04-06T01:04:04.4919369+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"y097semt"}
+{"time":"2025-04-06T01:04:04.4919369+02:00","level":"INFO","msg":"sender: started","stream_id":"y097semt"}
+{"time":"2025-04-06T01:04:04.4919369+02:00","level":"INFO","msg":"handler: started","stream_id":"y097semt"}
+{"time":"2025-04-06T01:04:04.6691886+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-06T01:04:05.5355337+02:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-04-06T01:04:59.4990639+02:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-04-06T01:05:04.6815267+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
+{"time":"2025-04-06T01:05:09.7831923+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-06T01:05:09.7831923+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-06T01:05:10.7254339+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-06T01:05:10.7862441+02:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary, console lines 47-82","runtime_seconds":0.0608102}],"total_operations":1}}
+{"time":"2025-04-06T01:05:10.9261141+02:00","level":"INFO","msg":"stream: closing","id":"y097semt"}
+{"time":"2025-04-06T01:05:10.9261141+02:00","level":"INFO","msg":"handler: closed","stream_id":"y097semt"}
+{"time":"2025-04-06T01:05:10.9261141+02:00","level":"INFO","msg":"sender: closed","stream_id":"y097semt"}
+{"time":"2025-04-06T01:05:10.9261141+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"y097semt"}
+{"time":"2025-04-06T01:05:10.9261141+02:00","level":"INFO","msg":"stream: closed","id":"y097semt"}

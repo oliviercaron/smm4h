@@ -1,0 +1,42 @@
+{
+  "os":  "Windows-10-10.0.19045-SP0",
+  "python":  "CPython 3.12.2",
+  "startedAt":  "2025-04-05T22:56:06.299130Z",
+  "program":  "c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\SMM4H_2025_Task_1_notebook.ipynb",
+  "codePath":  "task1\\SMM4H_2025_Task_1_notebook.ipynb",
+  "git":  {
+    "remote":  "https://github.com/oliviercaron/ssmh4.git",
+    "commit":  "cacb4780abc0cedab2fa3d87aaa0856ee6af6685"
+  },
+  "email":  "caron.olivier.80@gmail.com",
+  "root":  "c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1",
+  "host":  "DESKTOP-K47HN6J",
+  "executable":  "c:\\Users\\Olivier\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "codePathLocal":  "SMM4H_2025_Task_1_notebook.ipynb",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA GeForce RTX 3070",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "999524556800",
+      "used":  "853985746944"
+    }
+  },
+  "memory":  {
+    "total":  "51462254592"
+  },
+  "cpu":  {
+    "count":  6,
+    "countLogical":  12
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3070",
+      "memoryTotal":  "8589934592",
+      "cudaCores":  5888,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.8"
+}

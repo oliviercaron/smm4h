@@ -1,0 +1,20 @@
+2025-04-05 17:46:31,382 INFO    MainThread:16720 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250405_174631-yqwk4skh\logs\debug.log
+2025-04-05 17:46:31,382 INFO    MainThread:16720 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250405_174631-yqwk4skh\logs\debug-internal.log
+2025-04-05 17:46:31,383 INFO    MainThread:16720 [wandb_init.py:init():761] calling init triggers
+2025-04-05 17:46:31,383 INFO    MainThread:16720 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, '_wandb': {}}
+2025-04-05 17:46:31,383 INFO    MainThread:16720 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-05 17:46:40,630 INFO    MainThread:16720 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-05 17:46:52,190 INFO    MainThread:16720 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-05 17:46:52,190 INFO    MainThread:16720 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-05 17:49:12,419 INFO    MainThread:16720 [wandb_init.py:_resume_backend():569] resuming backend
+2025-04-05 17:49:12,436 INFO    MainThread:16720 [wandb_init.py:setup_run_log_directory():647] Logging user logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250405_174912-7ktigfie\logs\debug.log
+2025-04-05 17:49:12,436 INFO    MainThread:16720 [wandb_init.py:setup_run_log_directory():648] Logging internal logs to c:\Users\Olivier\Documents\GitHub\ssmh4\task1\wandb\run-20250405_174912-7ktigfie\logs\debug-internal.log
+2025-04-05 17:49:12,436 INFO    MainThread:16720 [wandb_init.py:init():761] calling init triggers
+2025-04-05 17:49:12,437 INFO    MainThread:16720 [wandb_init.py:init():766] wandb.init called with sweep_config: {}
+config: {'base_model': 'xlm-roberta-large', 'train_data': 'data/train_data_SMM4H_2025_Task_1.csv', 'qlora_enabled': True, 'lora_target_modules': ['q_proj', 'v_proj'], 'batch_size_per_device': 2, 'gradient_accumulation': 16, 'effective_batch_size': 32, 'num_epochs': 5, 'learning_rate': 2e-05, 'max_length': 256, '_wandb': {}}
+2025-04-05 17:49:12,437 INFO    MainThread:16720 [wandb_init.py:init():776] wandb.init() called while a run is active
+2025-04-05 17:49:21,238 INFO    MainThread:16720 [wandb_run.py:_config_callback():1261] config_cb None None {'class_weights': [0.5426468253135681, 6.362097263336182]}
+2025-04-05 17:49:23,173 INFO    MainThread:16720 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-04-05 17:49:23,174 INFO    MainThread:16720 [wandb_init.py:_pause_backend():564] pausing backend
+2025-04-05 17:49:23,225 INFO    MsgRouterThr:16720 [mailbox.py:close():129] Closing mailbox, abandoning 1 handles.

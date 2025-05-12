@@ -1,9 +1,0 @@
-{"time":"2025-04-03T12:45:17.7405121+02:00","level":"INFO","msg":"stream: starting","core version":"0.19.8","symlink path":"c:\\Users\\Olivier\\Documents\\GitHub\\ssmh4\\task1\\wandb\\run-20250403_124517-gdsmagdh\\logs\\debug-core.log"}
-{"time":"2025-04-03T12:45:17.8491156+02:00","level":"INFO","msg":"created new stream","id":"gdsmagdh"}
-{"time":"2025-04-03T12:45:17.8491156+02:00","level":"INFO","msg":"stream: started","id":"gdsmagdh"}
-{"time":"2025-04-03T12:45:17.8491156+02:00","level":"INFO","msg":"handler: started","stream_id":"gdsmagdh"}
-{"time":"2025-04-03T12:45:17.8491156+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gdsmagdh"}
-{"time":"2025-04-03T12:45:17.8491156+02:00","level":"INFO","msg":"sender: started","stream_id":"gdsmagdh"}
-{"time":"2025-04-03T12:45:18.0821556+02:00","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-04-03T12:45:33.089654+02:00","level":"ERROR","msg":"monitor: error sampling metrics: Incorrect function."}
-{"time":"2025-04-03T12:45:41.110539+02:00","level":"INFO","msg":"Pausing system monitor"}

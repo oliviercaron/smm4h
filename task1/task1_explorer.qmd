@@ -166,9 +166,11 @@ classe_1_ru %>%
 #analyser_distribution_labels(train_data)
 #analyser_distribution_labels(dev_data)
 ```
+
 ## Chatgpt Augmentation Data
+
 ```{r}
-# --- Génération des textes synthétiques (Label 1) AVEC LONGUEURS VARIÉES ---
+# --- Génération des textes synthétiques (Label 1) AVEC LONGUEURS VARIÉES test ---
 
 # Français (FR) - Cible: Variété autour de Q1=97, Med=134, Q3=203 mots
 fr_texts_synth_varied <- c(
@@ -462,7 +464,6 @@ train_data <- train_data %>%
   relocate(text_clean, .after = text)
 ```
 
-
 ## Let's try to classify with gemma3 ollama
 
 ```{r}
@@ -622,7 +623,6 @@ test_de <- test %>%
   mutate(translation = llm_vec_translate(text_clean, "deutsch", additional_prompt = "", preview = FALSE))
 
 ```
-
 
 ## DATA AUGMENTATION
 
@@ -1011,7 +1011,6 @@ apercu_augmentation(train_data_augmented, n = 2)  # 2 exemples par groupe
 
 ```
 
-
 ## Data augmentation simple mini high
 
 ```{r}
@@ -1084,6 +1083,7 @@ write_csv(train_data_balanced, "data/train_data_balanced.csv")
 ```
 
 ## Let's evaluate gemma3 inventing sentences ADE
+
 ```{r}
 t1 <- Sys.time()
 # Filtrer les exemples EN et RU avec label = 1
@@ -1132,11 +1132,3 @@ src_ade_posts %>%
 
 Sys.time() - t1
 ```
-
-
-
-
-
-
-
-
